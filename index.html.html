@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>24iconlab – Icons made for SaaS products</title>
+<style>
+:root{--bg:#fcfcfd;--sf:#f2f4f7;--bd:#e0e4ea;--tx:#101828;--mu:#566275;--ac:#0b7285;--ac2:#e0f2f5;--on:#fff;--ko:var(--bg);--sb:#cdd2db;--cb:#121212;--cbd:#121212;--ct:#f2f2f2;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121212;--sf:#1c1c1c;--bd:#2e2e2e;--tx:#f2f2f2;--mu:#a1a1a1;--ac:#4cc9dd;--ac2:#1d2a2d;--on:#0a0a0a;--sb:#3a3a3a;--cb:#1c1c1c;--cbd:#2e2e2e;--ct:#f2f2f2;color-scheme:dark}}
+:root[data-theme="dark"]{--sb:#3a3a3a;--cb:#1c1c1c;--cbd:#2e2e2e;--ct:#f2f2f2;--bg:#121212;--sf:#1c1c1c;--bd:#2e2e2e;--tx:#f2f2f2;--mu:#a1a1a1;--ac:#4cc9dd;--ac2:#1d2a2d;--on:#0a0a0a;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:20}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.w{max-width:1200px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:19;background:var(--bg);border-bottom:1px solid var(--bd)}
+.nav{display:flex;align-items:center;gap:24px;height:64px}
+.brand{font-weight:800;font-size:19px;letter-spacing:-.02em;margin-right:auto;color:var(--tx);text-decoration:none}
+.nav a.l{color:var(--mu);text-decoration:none;font-size:14px}
+.nav a.l:hover{color:var(--tx)}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:42px;padding:0 18px;border-radius:10px;border:1px solid var(--bd);background:var(--bg);font-weight:600;text-decoration:none;color:var(--tx)}
+.btn.p{background:var(--ac);border-color:var(--ac);color:var(--on)}
+.th{width:42px;padding:0}
+h1,h2{font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;letter-spacing:-.025em;line-height:1.05;margin:0}
+h1{font-size:clamp(42px,7vw,76px);max-width:13ch}
+h2{font-size:clamp(32px,4.6vw,52px);max-width:20ch}
+.sub{color:var(--mu);font-size:clamp(17px,2vw,20px);max-width:54ch;margin:24px 0 36px}
+.lead{color:var(--mu);font-size:18px;max-width:56ch;margin:20px auto 0}
+.hero{padding:88px 0 0}
+.bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+#q,#hq{flex:1 1 300px;height:56px;padding:0 18px;border:1.5px solid var(--bd);border-radius:14px;background:var(--bg);font-size:16px}
+#q:focus,#hq:focus{border-color:var(--ac);outline:0;box-shadow:0 0 0 3px var(--ac2)}
+.opts{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0 40px}
+.seg{display:inline-flex;background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:3px;overflow-x:auto;max-width:100%}
+.seg button{flex:none;border:0;background:none;color:var(--mu);height:40px;padding:0 14px;border-radius:9px;font-weight:600}
+.seg button.on{background:var(--bg);color:var(--tx);box-shadow:0 0 0 1px var(--bd)}
+.browse{display:grid;grid-template-columns:230px 1fr;gap:32px}
+.side{position:sticky;top:calc(env(safe-area-inset-top,0px) + 84px);align-self:start;max-height:calc(100vh - 110px);overflow:auto;display:flex;flex-direction:column;gap:2px;padding-right:10px}
+.side,.seg,pre{scrollbar-width:thin;scrollbar-color:var(--sb) transparent}.side::-webkit-scrollbar,.seg::-webkit-scrollbar,pre::-webkit-scrollbar{width:8px;height:8px}.side::-webkit-scrollbar-thumb,.seg::-webkit-scrollbar-thumb,pre::-webkit-scrollbar-thumb{background:var(--sb);border-radius:8px}.side h3{margin:0 0 8px 10px;font-size:14px}
+.cat{display:flex;justify-content:space-between;gap:8px;padding:8px 10px;border:0;background:none;border-radius:8px;text-align:left;color:var(--mu);font-size:14px}
+.cat:hover{background:var(--sf)}
+.cat.on{background:var(--sf);color:var(--tx);font-weight:600}
+.cat.soon{opacity:.45;cursor:default}
+.cat.soon:hover{background:none}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:16px}
+.head b{font-size:22px}
+.head span{color:var(--mu);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:10px}
+.ic{display:flex;flex-direction:column;align-items:center;gap:10px;padding:22px 4px 12px;border:1px solid var(--bd);border-radius:12px;background:var(--sf)}
+.ic:hover{border-color:var(--ac)}
+.ic span{font-size:12px;color:var(--mu);max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.empty{text-align:center;padding:56px 0;color:var(--mu)}
+.empty p{margin:0 0 12px}
+.chip{border:1px solid var(--bd);background:none;padding:6px 14px;border-radius:99px;font-size:14px}
+section.w{padding-top:clamp(80px,10vw,128px);text-align:center}section.w h2{margin:0 auto}h2.two{max-width:none}.box{text-align:left}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin-top:48px}
+.cards.t{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.box{padding:24px;border:1px solid var(--bd);border-radius:16px;background:var(--bg)}
+.box h3{margin:0 0 4px;font-size:18px}
+.box p{margin:6px 0 0;color:var(--mu);font-size:15px}
+.big{display:grid;place-items:center;height:110px;border-radius:12px;background:var(--sf);margin-bottom:18px}
+pre{margin:16px 0 0;padding:12px;background:var(--sf);border:1px solid var(--bd);border-radius:10px;overflow:auto;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 10px;border-radius:99px;background:var(--ac2);color:var(--ac);margin-left:8px;vertical-align:middle}
+.free ul{margin:48px auto 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:880px;text-align:left}
+.free li{padding:22px 24px 22px 58px;position:relative;color:var(--tx);font-weight:500;background:var(--sf);border:1px solid var(--bd);border-radius:16px}
+.free li::before{content:"";position:absolute;left:26px;top:29px;width:14px;height:8px;border-left:2px solid var(--ac);border-bottom:2px solid var(--ac);transform:rotate(-45deg)}
+.cta{position:relative;overflow:hidden;isolation:isolate;margin-top:clamp(80px,10vw,128px);padding:88px 24px;border-radius:24px;background:radial-gradient(60% 90% at 50% 0%,rgba(76,201,221,.32),transparent 70%),radial-gradient(45% 70% at 100% 100%,rgba(76,201,221,.16),transparent 70%),radial-gradient(40% 60% at 0% 100%,rgba(120,140,255,.14),transparent 70%),var(--cb);border:1px solid var(--cbd);color:var(--ct);text-align:center}.cta::before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:24px 24px;-webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000 15%,transparent 72%);mask-image:radial-gradient(ellipse at 50% 40%,#000 15%,transparent 72%)}
+.cta h2{margin:0 auto;color:var(--ct)}
+.cta p{margin:16px auto 28px;opacity:.75;max-width:48ch}
+.join{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.join input{flex:1 1 240px;max-width:340px;height:48px;padding:0 14px;border-radius:10px;border:0;background:var(--bg);color:var(--tx)}
+.join .btn{border:0;height:48px}.cta .btn.p{background:#4cc9dd;color:#0a0a0a}
+#ok{min-height:22px;margin-top:14px;font-size:14px}
+footer{margin-top:clamp(80px,10vw,128px);border-top:1px solid var(--bd);background:var(--sf);padding:72px 0 32px;color:var(--mu);font-size:14px}.fg{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:48px}.fb b{display:block;font-size:19px;letter-spacing:-.02em;color:var(--tx);margin-bottom:12px}.fb p{margin:0 0 20px;max-width:34ch}.fs{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border:1px solid var(--bd);border-radius:99px;background:var(--bg);font-size:13px;color:var(--tx)}.fs::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ac)}.fc h4{margin:0 0 16px;font-size:14px;color:var(--tx)}.fc ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}.fc a,.fbt a{color:var(--mu);text-decoration:none}.fc a:hover,.fbt a:hover{color:var(--tx)}.fc .s{opacity:.6}.fc .s em{font-style:normal;font-size:11px;margin-left:8px;padding:1px 8px;border-radius:99px;border:1px solid var(--bd)}.fbt{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:56px;padding-top:24px;border-top:1px solid var(--bd)}
+
+
+
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--tx);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:30}
+#toast.on{opacity:1}
+@media(max-width:860px){.browse{grid-template-columns:1fr;gap:20px}.side{position:static;flex-direction:row;overflow-x:auto;max-height:none;gap:8px}.side h3{display:none}.cat{flex:none;white-space:nowrap;border:1px solid var(--bd);border-radius:99px}.nav a.l{display:none}}
+@media(max-width:700px){.free ul{grid-template-columns:1fr}}@media(max-width:860px){.fg{grid-template-columns:1fr 1fr;gap:36px}.fb{grid-column:1/-1}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.view[hidden]{display:none}.ic,.mi,.big,.fgd div,.szs,.pv,.mc:hover{--ko:var(--sf)}.nav a.l.on{color:var(--tx);font-weight:600}.pg{font-size:clamp(36px,5.5vw,60px);max-width:none}section.w h1{margin:0 auto}.view>section.w:first-child{padding-top:72px}.feat{margin-top:48px;grid-template-columns:repeat(6,1fr)}@media(max-width:700px){.feat{grid-template-columns:repeat(3,1fr)}}.lk{display:block;color:inherit;text-decoration:none}.lk:hover{border-color:var(--ac)}.go{display:inline-block;margin-top:14px;color:var(--ac);font-weight:600}.mx{display:grid;grid-template-columns:minmax(150px,1.3fr) repeat(3,1fr);gap:1px;max-width:880px;margin:48px auto 0;border:1px solid var(--bd);border-radius:16px;overflow:hidden;background:var(--bd);text-align:left}.mh{display:flex;align-items:center;justify-content:center;height:56px;background:var(--sf);font-size:14px;font-weight:600}.mh.f{justify-content:flex-start;padding-left:24px;color:var(--mu);font-weight:500}.ml{display:flex;flex-direction:column;justify-content:center;gap:2px;padding:0 24px;background:var(--bg)}.ml b{font-size:15px}.ml small{color:var(--mu);font-size:13px;line-height:1.4}.mc{display:grid;place-items:center;height:104px;background:var(--bg);transition:background .15s}.mc:hover{background:var(--sf)}.split.eq{align-items:stretch}.split.eq .box{display:flex;flex-direction:column}.split.eq pre{flex:1;margin:20px 0 0;padding:24px;border-radius:12px;display:flex;align-items:center;overflow:auto}.split.eq .szs{flex:1;margin-top:20px;align-items:center}.faq{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:880px;margin:48px auto 0;align-items:start;text-align:left}details{background:var(--sf);border:1px solid var(--bd);border-radius:16px;padding:20px 24px}summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}summary::-webkit-details-marker{display:none}summary::after{content:"+";color:var(--mu)}details[open] summary::after{content:"\2013"}details p{margin:12px 0 0;color:var(--mu)}.act{margin-top:40px}@media(max-width:700px){.faq{grid-template-columns:1fr}.mx{grid-template-columns:88px repeat(3,1fr)}.ml{padding:0 12px}.ml small{display:none}.mh.f{padding-left:12px}.mc{height:84px}}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;max-width:760px;margin:64px auto 0;text-align:center}.stats b{display:block;font:700 clamp(30px,4vw,42px)/1.1 "Iowan Old Style","Palatino Linotype",Georgia,serif}.stats span{color:var(--mu);font-size:14px}.case{display:flex;justify-content:space-between;align-items:center;gap:12px;text-align:left;padding:20px;border:1px solid var(--bd);border-radius:14px;background:var(--bg)}.case:hover{border-color:var(--ac)}.case b{display:block;font-size:17px}.case small{color:var(--mu);font-size:13px}.mini{display:flex;gap:10px;color:var(--ac)}.mi{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;place-items:center;padding:22px 12px;border-radius:12px;background:var(--sf);margin-bottom:16px}.split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px;align-items:center;text-align:left}.split h3{font-size:22px;margin:0 0 6px}.ftx p{color:var(--mu);margin:8px 0 0}.pts{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}.pts li{padding-left:28px;position:relative}.pts li::before{content:"";position:absolute;left:0;top:7px;width:14px;height:8px;border-left:2px solid var(--ac);border-bottom:2px solid var(--ac);transform:rotate(-45deg)}.szs{display:flex;align-items:flex-end;gap:20px;margin-top:20px;padding:24px;border-radius:12px;background:var(--sf);flex-wrap:wrap}.fw{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.fw .chip{opacity:.65}.fw .chip.on{opacity:1}.shot{display:grid;place-items:center;padding:28px 20px;border-radius:16px;background:var(--sf);border:1px solid var(--bd)}.ui{width:100%;max-width:250px;background:var(--bg);border:1px solid var(--bd);border-radius:14px;padding:10px;text-align:left;box-shadow:0 16px 40px rgba(0,0,0,.08)}.ur{display:flex;gap:12px;align-items:center;padding:9px 10px;border-radius:8px;font-size:14px}.ur svg{flex:none;color:var(--mu)}.ur.on{background:var(--ac2);color:var(--ac);font-weight:600}.ur.on svg{color:var(--ac)}.num{font:700 30px/1.2 "Iowan Old Style",Georgia,serif;padding:2px 10px}.up{color:var(--ac)}.up svg{color:var(--ac)}.fig{background:var(--bg);border:1px solid var(--bd);border-radius:14px;padding:14px;max-width:310px;margin:auto;box-shadow:0 20px 50px rgba(0,0,0,.12)}.fh{display:flex;gap:6px;align-items:center;margin-bottom:12px}.fh i{width:9px;height:9px;border-radius:50%;background:var(--bd)}.fh span{margin-left:8px;font-size:12px;color:var(--mu)}.fs2{display:flex;gap:8px;align-items:center;padding:9px 12px;border:1px solid var(--bd);border-radius:10px;color:var(--mu);font-size:13px;margin-bottom:10px}.fp{display:flex;gap:6px;margin-bottom:12px;font-size:12px}.fp b,.fp span{padding:4px 10px;border-radius:99px;border:1px solid var(--bd);font-weight:500}.fp b{background:var(--ac);border-color:var(--ac);color:var(--on)}.fgd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.fgd div{display:grid;place-items:center;height:52px;border-radius:10px;background:var(--sf)}@media(max-width:860px){.split{grid-template-columns:1fr}}
+.ov{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,.55);display:grid;place-items:center;padding:20px;overflow:auto}.ov[hidden]{display:none}.dlg{width:100%;max-width:840px;background:var(--bg);border:1px solid var(--bd);border-radius:20px;padding:24px;box-shadow:0 30px 80px rgba(0,0,0,.35);margin:auto}.mtop{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}.crumb{font-size:13px;color:var(--mu)}.crumb b{color:var(--tx)}.x{width:36px;height:36px;border-radius:10px;border:1px solid var(--bd);background:var(--bg);display:grid;place-items:center}.mbody{display:grid;grid-template-columns:230px 1fr;gap:24px}.mprev{--ko:var(--sf);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-height:240px;background:var(--sf);border:1px solid var(--bd);border-radius:14px;color:var(--tx);padding:16px;overflow:hidden}.mprev small{color:var(--mu)}.mctl h3{margin:0;font-size:24px;letter-spacing:-.01em}.fld{display:grid;gap:8px;margin-top:14px}.fld label{font-size:13px;color:var(--mu);font-weight:600}.fld .seg{justify-self:start}.szr,.clr{display:flex;flex-wrap:wrap;gap:6px;align-items:center}.szr .chip.on,.clr .chip.on{background:var(--tx);border-color:var(--tx);color:var(--bg)}.sw{width:26px;height:26px;padding:0;border-radius:50%;border:2px solid var(--bg);box-shadow:0 0 0 1px var(--bd)}.sw.on{box-shadow:0 0 0 2px var(--ac)}#mhex{width:92px;height:34px;padding:0 10px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);font:13px ui-monospace,Menlo,monospace}input[type=color]{width:34px;height:34px;padding:2px;border:1px solid var(--bd);border-radius:10px;background:var(--bg)}.dls{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.mcode{margin-top:20px}.mcode .seg{margin-bottom:10px}.cb{position:relative}.cb pre{margin:0;max-height:190px;padding-right:110px}.cb .btn{position:absolute;top:10px;right:10px;height:34px;padding:0 12px;font-size:13px}@media(max-width:700px){.mbody{grid-template-columns:1fr}.mprev{min-height:170px}.dlg{padding:18px}}
+.cat.soon{display:flex}@media(max-width:860px){.cat.soon{display:none}}</style>
+</head>
+<body>
+<header><div class="w nav">
+<a class="brand" href="#home">24iconlab</a>
+<a class="l" href="#icons">Icons</a><a class="l" href="#styles">Styles</a><a class="l" href="#integrations">Integrations</a><a class="l" href="#license">License</a>
+<button class="btn th" id="th" aria-label="Toggle light and dark theme"></button>
+<a class="btn p" href="#access">Early access</a>
+</div></header>
+
+<main>
+<div class="view" data-v="home">
+<div class="w hero">
+<h1>Icons made for SaaS products.</h1>
+<p class="sub">Billing, permissions, analytics, onboarding. The icons your product screens actually need, in one consistent 24 px set.</p>
+<div class="bar"><input id="hq" type="search" placeholder="Search icons, e.g. invoice, team, alert" aria-label="Search icons"><button class="btn p" id="hs" style="height:56px">Search icons</button></div>
+<div class="grid feat" id="feat"></div>
+<div class="stats" id="stats"></div>
+</div>
+<section class="w"><h2>Find icons by what your screen does</h2><p class="lead">Start from a use case, not a long alphabetical list.</p><div class="cards t" id="cats"></div></section>
+<section class="w"><h2>Pick the style that fits your product</h2><p class="lead">Five styles and three corner settings. Same icons, different weight.</p><div class="cards" id="strip"></div><div class="act"><a class="btn" href="#styles">See all styles</a></div></section>
+<section class="w"><h2>Build the way you need</h2><p class="lead">Copy SVG today. Framework packages are on the way.</p>
+<div class="split eq"><div class="box"><h3>React<span class="tag">Soon</span></h3><p>One import per icon, tree-shakable.</p><pre>import { FolderIcon } from '@24iconlab/react'
+
+&lt;FolderIcon size={24} /&gt;</pre><div class="fw"><span class="chip on">npm</span><span class="chip">pnpm</span><span class="chip">yarn</span></div></div>
+<div class="box"><h3>Any size, any color</h3><p>Icons inherit your text color and stay sharp at every size.</p><div class="szs" id="sizes"></div><div class="fw"><span class="chip on">SVG</span><span class="chip">React</span><span class="chip">Vue</span><span class="chip">Svelte</span><span class="chip">Angular</span><span class="chip">Flutter</span></div></div></div></section>
+<section class="w"><h2>Design where you are</h2><p class="lead">A Figma plugin, so you never leave your file.</p>
+<div class="split"><div class="ftx"><h3>Figma plugin<span class="tag">Soon</span></h3><p>Search the whole set from inside Figma and drop icons straight onto your canvas.</p><ul class="pts"><li>Search by name or meaning</li><li>Insert as editable layers</li><li>Switch style and corners in one click</li></ul></div><div id="figmock"></div></div><div class="act"><a class="btn" href="#integrations">See integrations</a></div></section>
+<section class="w"><h2>Beautiful UI made with 24iconlab</h2><p class="lead">See how one consistent set keeps real screens clean and easy to scan.</p><div class="cards t" id="ex"></div></section>
+</div>
+
+<div class="view" data-v="icons" hidden>
+<div class="w hero">
+<h1 class="pg">Browse icons</h1>
+<p class="sub">Pick a category, set a style, then click an icon to copy it or download it as SVG, PNG or JPEG.</p>
+<div class="bar"><input id="q" type="search" placeholder="Search icons, e.g. invoice, team, alert" aria-label="Search icons"></div>
+<div class="opts"><div class="seg" id="sty" aria-label="Style"><button data-st="stroke">Stroke</button><button data-st="duo">Duotone</button><button data-st="two">Twotone</button><button data-st="solid">Solid</button><button data-st="bulk">Bulk</button></div>
+<div class="seg" id="cor" aria-label="Corners"><button data-cr="round">Rounded</button><button data-cr="std">Standard</button><button data-cr="sharp">Sharp</button></div></div>
+<div class="browse">
+<nav class="side" id="side" aria-label="Categories"></nav>
+<div>
+<div class="head"><b id="ttl">All icons</b><span id="meta"></span></div>
+<div class="grid" id="grid"></div>
+<div class="empty" id="empty" hidden><p><b>No icons found</b></p><p>Try another keyword or category.</p><button class="chip" id="clr">Clear search</button></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="view" data-v="styles" hidden>
+<section class="w">
+<h1 class="pg">Five styles, three corners.<br>Pick by where it sits.</h1>
+<p class="lead">Every icon exists in every combination, so one product can use Stroke in tables and Solid in active states without mixing sets.</p>
+<div class="cards" id="styledemo"></div>
+<div class="cards" id="cornerdemo"></div>
+</section>
+<section class="w">
+<h2>All 15 combinations</h2>
+<p class="lead">The same icon in every style and corner setting.</p>
+<div class="mx" id="matrix"></div>
+<div class="act"><a class="btn p" href="#icons">Try them in the browser</a></div>
+</section>
+</div>
+
+<div class="view" data-v="integrations" hidden>
+<section class="w">
+<h1 class="pg">Use them where you already work</h1>
+<p class="lead">Search, copy and install without leaving your tools.</p>
+<div class="cards t">
+<div class="box"><h3>Figma plugin<span class="tag">Soon</span></h3><p>Search, filter by style and insert as editable layers without leaving your file.</p></div>
+<div class="box"><h3>React<span class="tag">Soon</span></h3><p>Tree-shakable components, one import per icon.</p><pre>npm i @24iconlab/react
+import { FolderIcon } from '@24iconlab/react'</pre></div>
+<div class="box"><h3>SVG<span class="tag">Live</span></h3><p>Click any icon in the browser to copy clean, recolorable SVG. No account needed.</p></div>
+</div>
+</section>
+<section class="w">
+<h2>Copy an icon in three steps</h2>
+<div class="cards t">
+<div class="box"><h3>1. Pick</h3><p>Search or choose a category, then set the style and corners you want.</p></div>
+<div class="box"><h3>2. Copy</h3><p>Click the icon. Clean SVG goes straight to your clipboard.</p></div>
+<div class="box"><h3>3. Paste</h3><p>Drop it into Figma, your code or your CMS. It inherits your text color.</p></div>
+</div>
+<div class="act"><a class="btn p" href="#icons">Open the icon browser</a></div>
+</section>
+</div>
+
+<div class="view" data-v="license" hidden>
+<section class="w free">
+<h1 class="pg">Free to use, for now</h1>
+<p class="lead">While we build the set category by category, everything is open to everyone.</p>
+<ul><li>Every style and every corner</li><li>All categories as they are released</li><li>SVG, React and Figma access</li><li>Commercial projects allowed</li></ul>
+</section>
+<section class="w">
+<h2>Questions</h2>
+<div class="faq">
+<details><summary>Is it really free?</summary><p>Yes. While we build the set, every style and category is free to use.</p></details>
+<details><summary>Can I use it in client projects?</summary><p>Yes, commercial projects are allowed.</p></details>
+<details><summary>Will there be a paid plan?</summary><p>A Pro plan for teams may come later. Nothing is decided yet.</p></details>
+<details><summary>Which formats can I use today?</summary><p>SVG, by clicking any icon. The React package and Figma plugin are coming soon.</p></details>
+<details><summary>Can I request an icon?</summary><p>Not in the product yet. Join early access and tell us which icons you need first.</p></details>
+<details><summary>Where is the full license text?</summary><p>This page will hold it once it is ready.</p></details>
+</div>
+</section>
+</div>
+
+<div class="w">
+<div class="cta" id="access">
+<h2>Get early access</h2>
+<p>We are building the set category by category. Join the list and tell us which icons you need first.</p>
+<div class="join"><input id="em" type="email" placeholder="you@company.com" aria-label="Email address"><button class="btn p" id="go">Join the list</button></div>
+<div id="ok" role="status"></div>
+</div>
+</div>
+</main>
+
+<footer><div class="w"><div class="fg"><div class="fb"><b>24iconlab</b><p>Icons made for SaaS products. One consistent 24 px set, free to use while we build it.</p><span class="fs" id="fcount"></span></div><div class="fc"><h4>Product</h4><ul><li><a href="#icons">Icons</a></li><li><a href="#styles">Styles</a></li><li><a href="#license">License</a></li><li><a href="#access">Early access</a></li></ul></div><div class="fc"><h4>Developers</h4><ul><li><a href="#integrations">SVG</a></li><li class="s">React package<em>Soon</em></li><li class="s">Figma plugin<em>Soon</em></li><li class="s">Documentation<em>Soon</em></li></ul></div><div class="fc"><h4>Resources</h4><ul><li class="s">Request an icon<em>Soon</em></li><li class="s">Changelog<em>Soon</em></li><li class="s">Privacy policy<em>Soon</em></li></ul></div></div><div class="fbt"><span>© 2026 24iconlab. All rights reserved.</span><a href="#top">Back to top</a></div></div></footer>
+<div class="ov" id="ov" hidden><div class="dlg" role="dialog" aria-modal="true" aria-labelledby="mn">
+<div class="mtop"><nav class="crumb" id="mc"></nav><button class="x" id="mx" aria-label="Close">&#x2715;</button></div>
+<div class="mbody"><div class="mprev" id="mp"></div>
+<div class="mctl"><h3 id="mn"></h3>
+<div class="fld"><label>Style</label><div class="seg" id="msty"><button data-st="stroke">Stroke</button><button data-st="duo">Duotone</button><button data-st="two">Twotone</button><button data-st="solid">Solid</button><button data-st="bulk">Bulk</button></div></div>
+<div class="fld"><label>Corners</label><div class="seg" id="mcor"><button data-cr="round">Rounded</button><button data-cr="std">Standard</button><button data-cr="sharp">Sharp</button></div></div>
+<div class="fld"><label>Size (px)</label><div class="szr" id="msz"></div></div>
+<div class="fld"><label>Stroke width</label><div class="seg" id="msw"><button data-w="1">1</button><button data-w="1.5">1.5</button><button data-w="2">2</button></div></div>
+<div class="fld"><label>Color</label><div class="clr" id="mcl"></div></div>
+</div></div>
+<div class="dls"><button class="btn p" id="mcp">Copy SVG</button><button class="btn" data-dl="svg">Download SVG</button><button class="btn" data-dl="png">Download PNG</button><button class="btn" data-dl="jpg">Download JPEG</button></div>
+<div class="mcode"><div class="seg" id="mtab"><button data-mt="svg">SVG</button><button data-mt="react">React</button></div><div class="cb"><pre id="mcd"></pre><button class="btn" id="mcc">Copy code</button></div></div>
+</div></div>
+<div id="toast" role="status"></div>
+
+<script>
+const I=[
+['trophy','Award','trophy cup winner champion first place','<pg d="7 3 17 3 17 9 14.5 13 9.5 13 7 9" r="2"/><path o d="M7 5H4v3l3 2.5M17 5h3v3l-3 2.5M12 13v4"/><rect x="8" y="17" width="8" height="4" rx="1"/>'],
+['trophy-star','Award','trophy star best top award','<pg d="7 3 17 3 17 9 14.5 13 9.5 13 7 9" r="2"/><path o d="M7 5H4v3l3 2.5M17 5h3v3l-3 2.5M12 13v4"/><rect x="8" y="17" width="8" height="4" rx="1"/><path f d="M12 5.2L12.69 7.05L14.66 7.13L13.12 8.36L13.65 10.27L12 9.18L10.35 10.27L10.88 8.36L9.34 7.13L11.31 7.05Z"/>'],
+['star-trophy','Award','star trophy statue prize figurine','<pg d="12 1.8 13.28 5.23 16.95 5.39 14.08 7.67 15.06 11.21 12 9.18 8.94 11.21 9.92 7.67 7.05 5.39 10.72 5.23" r="0.8"/><path o d="M12 12.5V17"/><rect x="7" y="17" width="10" height="4" rx="1"/>'],
+['plaque','Award','plaque trophy block engraved recognition','<rect x="5" y="3" width="14" height="14" rx="2"/><path k d="M9 8h6M9 12h6"/><rect x="7" y="17" width="10" height="4" rx="1"/>'],
+['medal','Award','medal prize ribbon winner','<path o d="M8 2l4 7.5M16 2l-4 7.5"/><circle cx="12" cy="15.5" r="6"/><circle k cx="12" cy="15.5" r="3.2"/>'],
+['medal-star','Award','medal star prize favorite','<path o d="M8 2l4 7.5M16 2l-4 7.5"/><circle cx="12" cy="15.5" r="6"/><path f d="M12 12.1L12.84 14.34L15.23 14.45L13.36 15.94L14 18.25L12 16.93L10 18.25L10.64 15.94L8.77 14.45L11.16 14.34Z"/>'],
+['medal-first','Award','medal first place gold one 1','<path o d="M8 2l4 7.5M16 2l-4 7.5"/><circle cx="12" cy="15.5" r="6"/><path k d="M11 14l1.5-1.2V18"/>'],
+['medal-second','Award','medal second place silver two 2','<path o d="M8 2l4 7.5M16 2l-4 7.5"/><circle cx="12" cy="15.5" r="6"/><path k d="M10.6 13.8c.3-.9 1-1.2 1.6-1.2 1 0 1.7.6 1.7 1.4 0 .8-.6 1.3-1.3 1.9L10.6 18h3.4"/>'],
+['medal-third','Award','medal third place bronze three 3','<path o d="M8 2l4 7.5M16 2l-4 7.5"/><circle cx="12" cy="15.5" r="6"/><path k d="M10.6 12.8h3.2l-1.7 2c1 0 1.9.6 1.9 1.6 0 1-.8 1.7-1.9 1.7-.8 0-1.5-.3-1.8-.9"/>'],
+['rosette','Award','rosette ribbon badge prize award','<circle cx="12" cy="9.5" r="6"/><circle k cx="12" cy="9.5" r="3"/><pg d="7.5 15.5 16.5 15.5 17.5 22 14 20 12 22 10 20 6.5 22" r="0.8"/>'],
+['rosette-check','Award','rosette check verified approved award','<circle cx="12" cy="9.5" r="6"/><path k d="M9.3 9.6l2 2 3.6-3.8"/><pg d="7.5 15.5 16.5 15.5 17.5 22 14 20 12 22 10 20 6.5 22" r="0.8"/>'],
+['rosette-star','Award','rosette star top rated award','<circle cx="12" cy="9.5" r="6"/><path f d="M12 6.5L12.74 8.48L14.85 8.57L13.2 9.89L13.76 11.93L12 10.76L10.24 11.93L10.8 9.89L9.15 8.57L11.26 8.48Z"/><pg d="7.5 15.5 16.5 15.5 17.5 22 14 20 12 22 10 20 6.5 22" r="0.8"/>'],
+['seal-check','Award','seal check verified badge approved','<pg d="12 1.8 15.37 3.87 19.21 4.79 20.13 8.63 22.2 12 20.13 15.37 19.21 19.21 15.37 20.13 12 22.2 8.63 20.13 4.79 19.21 3.87 15.37 1.8 12 3.87 8.63 4.79 4.79 8.63 3.87" r="1.5"/><path k d="M8.5 12l2.5 2.5 4.5-5"/>'],
+['seal-star','Award','seal star premium badge top','<pg d="12 1.8 15.37 3.87 19.21 4.79 20.13 8.63 22.2 12 20.13 15.37 19.21 19.21 15.37 20.13 12 22.2 8.63 20.13 4.79 19.21 3.87 15.37 1.8 12 3.87 8.63 4.79 4.79 8.63 3.87" r="1.5"/><path f d="M12 8L12.99 10.64L15.8 10.76L13.6 12.52L14.35 15.24L12 13.68L9.65 15.24L10.4 12.52L8.2 10.76L11.01 10.64Z"/>'],
+['certificate','Award','certificate diploma award document','<rr d="3 4 18 14 2 16.5 16.5 5.2"/><path k d="M7 9h8M7 12.5h4"/><circle cx="16.5" cy="16.5" r="3.1"/><path o d="M15.2 19.5l-.8 2.5 2.1-1 2.1 1-.8-2.5"/>'],
+['banner','Award','banner pennant badge achievement','<pg d="5 3 19 3 19 15 12 21 5 15" r="1.5"/><path k d="M9 8h6M9 12h6"/>'],
+['banner-star','Award','banner star achievement badge level','<pg d="5 3 19 3 19 15 12 21 5 15" r="1.5"/><path f d="M12 6.6L12.84 8.84L15.23 8.95L13.36 10.44L14 12.75L12 11.43L10 12.75L10.64 10.44L8.77 8.95L11.16 8.84Z"/>'],
+['laurel-wreath','Award','laurel wreath victory honor champion','<pg d="4.63 19.03 7.65 17.11 11 18.37 7.98 20.29" r="0.7"/><pg d="1.9 13.36 5.48 13.57 7.45 16.56 3.88 16.35" r="0.7"/><pg d="3.03 7.17 5.8 9.44 5.64 13.01 2.87 10.74" r="0.7"/><pg d="7.59 2.82 8.49 6.28 6.26 9.08 5.36 5.62" r="0.7"/><path o d="M9.96 18.28A6.6 6.6 0 0 1 8.31 6.53"/><pg d="19.37 19.03 16.02 20.29 13 18.37 16.35 17.11" r="0.7"/><pg d="22.1 13.36 20.12 16.35 16.55 16.56 18.52 13.57" r="0.7"/><pg d="20.97 7.17 21.13 10.74 18.36 13.01 18.2 9.44" r="0.7"/><pg d="16.41 2.82 18.64 5.62 17.74 9.08 15.51 6.28" r="0.7"/><path o d="M14.04 18.28A6.6 6.6 0 0 0 15.69 6.53"/>'],
+['laurel-wreath-first','Award','laurel wreath first number one winner','<pg d="4.63 19.03 7.65 17.11 11 18.37 7.98 20.29" r="0.7"/><pg d="1.9 13.36 5.48 13.57 7.45 16.56 3.88 16.35" r="0.7"/><pg d="3.03 7.17 5.8 9.44 5.64 13.01 2.87 10.74" r="0.7"/><pg d="7.59 2.82 8.49 6.28 6.26 9.08 5.36 5.62" r="0.7"/><path o d="M9.96 18.28A6.6 6.6 0 0 1 8.31 6.53"/><pg d="19.37 19.03 16.02 20.29 13 18.37 16.35 17.11" r="0.7"/><pg d="22.1 13.36 20.12 16.35 16.55 16.56 18.52 13.57" r="0.7"/><pg d="20.97 7.17 21.13 10.74 18.36 13.01 18.2 9.44" r="0.7"/><pg d="16.41 2.82 18.64 5.62 17.74 9.08 15.51 6.28" r="0.7"/><path o d="M14.04 18.28A6.6 6.6 0 0 0 15.69 6.53"/><path k d="M10.8 10.2l1.7-1.2v6.4"/>'],
+['laurel-branch','Award','laurel branch olive victory leaf','<pg d="4.63 19.03 7.65 17.11 11 18.37 7.98 20.29" r="0.7"/><pg d="1.9 13.36 5.48 13.57 7.45 16.56 3.88 16.35" r="0.7"/><pg d="3.03 7.17 5.8 9.44 5.64 13.01 2.87 10.74" r="0.7"/><pg d="7.59 2.82 8.49 6.28 6.26 9.08 5.36 5.62" r="0.7"/><path o d="M9.96 18.28A6.6 6.6 0 0 1 8.31 6.53"/>'],
+['podium','Award','podium ranking winners leaderboard first second third','<rect x="3" y="13" width="6" height="8" rx="1"/><rect x="9" y="8" width="6" height="13" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><pg d="12 2.2 12.64 3.92 14.47 4 13.04 5.14 13.53 6.9 12 5.89 10.47 6.9 10.96 5.14 9.53 4 11.36 3.92" r="0.8"/>'],
+['crown-add','Award','add crown premium upgrade king','<pg d="2 9 6 12.5 10 6.5 14 12.5 18 9 16.5 18 3.5 18" r="1.2"/><path k d="M5.5 15.5h11"/><path o d="M19.5 3.5v5M17 6h5"/>'],
+['crown-remove','Award','remove crown demote downgrade','<pg d="2 9 6 12.5 10 6.5 14 12.5 18 9 16.5 18 3.5 18" r="1.2"/><path k d="M5.5 15.5h11"/><path o d="M17 6h5"/>'],
+['gem','Award','gem diamond jewel premium valuable','<pg d="6 3 18 3 22 9 12 21 2 9" r="1"/><path k d="M2 9h20M8 3l-2 6 6 12M16 3l2 6-6 12"/>'],
+['trigger','Automation','trigger bolt zap start automation event','<pg d="17.23 2.5 5.35 13.43 11.53 13.43 8.2 21.5 19.12 10.1 12.95 10.1" r="1.2"/>'],
+['trigger-off','Automation','trigger off disabled paused automation stopped','<pg d="17.23 2.5 5.35 13.43 11.53 13.43 8.2 21.5 19.12 10.1 12.95 10.1" r="1.2"/><path k d="M4 4l16 16"/>'],
+['trigger-add','Automation','add trigger new automation event','<pg d="14.4 5.5 4.4 14.7 9.6 14.7 6.8 21.5 16 11.9 10.8 11.9" r="1.2"/><path o d="M19.5 3.5v5M17 6h5"/>'],
+['trigger-circle','Automation','trigger circle bolt zap run','<circle cx="12" cy="12" r="9"/><path f d="M14.86 6.8L8.36 12.78L11.74 12.78L9.92 17.2L15.9 10.96L12.52 10.96Z"/>'],
+['scheduled-trigger','Automation','scheduled trigger timer cron time run','<circle cx="10.5" cy="13.5" r="7"/><path k d="M10.5 9.5v4l2.5 1.5"/><path b d="M21.07 1.8L16.82 5.71L19.03 5.71L17.84 8.6L21.75 4.52L19.54 4.52Z"/>'],
+['schedule-repeat','Automation','schedule repeat recurring recurring job cron','<path o d="M4.3 10a8 8 0 0 1 14.2-3M15 7h3.5V3.5"/><path o d="M19.7 14a8 8 0 0 1-14.2 3M9 17H5.5v3.5"/><path k d="M12 8.5V12l2.5 1.5"/>'],
+['workflow-linear','Automation','workflow linear steps sequence flow','<rect x="2" y="8.5" width="5" height="7" rx="1.5"/><rect x="9.5" y="8.5" width="5" height="7" rx="1.5"/><rect x="17" y="8.5" width="5" height="7" rx="1.5"/><path o d="M7 12h2.5M14.5 12H17"/>'],
+['workflow-branch','Automation','workflow branch split parallel flow','<rect x="2" y="9" width="6" height="6" rx="2"/><rect x="16" y="3" width="6" height="6" rx="2"/><rect x="16" y="15" width="6" height="6" rx="2"/><path o d="M8 12h3.5V6H16M11.5 12v6H16"/>'],
+['workflow-merge','Automation','workflow merge join combine flow','<rect x="2" y="3" width="6" height="6" rx="2"/><rect x="2" y="15" width="6" height="6" rx="2"/><rect x="16" y="9" width="6" height="6" rx="2"/><path o d="M8 6h3.5v6H16M8 18h3.5v-6"/>'],
+['condition','Automation','condition if else decision branch logic','<pg d="12 2.5 16.5 7 12 11.5 7.5 7" r="1.2"/><rect x="3" y="16.5" width="5" height="5" rx="1.5"/><rect x="16" y="16.5" width="5" height="5" rx="1.5"/><path o d="M12 11.5V14M5.5 16.5V14h13v2.5"/>'],
+['split-path','Automation','split path fan out branch routes','<circle cx="4" cy="12" r="1.6"/><circle cx="20" cy="6" r="1.6"/><circle cx="20" cy="12" r="1.6"/><circle cx="20" cy="18" r="1.6"/><path o d="M5.6 12H10L18.4 6M10 12h8.4M10 12l8.4 6"/>'],
+['merge-path','Automation','merge path fan in join routes','<circle cx="20" cy="12" r="1.6"/><circle cx="4" cy="6" r="1.6"/><circle cx="4" cy="12" r="1.6"/><circle cx="4" cy="18" r="1.6"/><path o d="M18.4 12H14L5.6 6M14 12H5.6M14 12l-8.4 6"/>'],
+['pipeline','Automation','pipeline stages chain process steps','<pg d="1 7 5.5 7 8 12 5.5 17 1 17 3.5 12" r="0.8"/><pg d="8 7 12.5 7 15 12 12.5 17 8 17 10.5 12" r="0.8"/><pg d="15 7 19.5 7 22 12 19.5 17 15 17 17.5 12" r="0.8"/>'],
+['queue','Automation','queue jobs list waiting tasks line','<path o d="M3 6h13M3 12h13M3 18h8M18.5 9.5L21 12l-2.5 2.5"/>'],
+['batch-actions','Automation','batch bulk actions select many multiple','<rect x="3" y="3.5" width="4.5" height="4.5" rx="1"/><rect x="3" y="9.75" width="4.5" height="4.5" rx="1"/><rect x="3" y="16" width="4.5" height="4.5" rx="1"/><path o d="M11 5.75h10M11 12h10M11 18.25h10"/>'],
+['transform-step','Automation','transform step convert map data change','<rect x="2" y="8" width="6" height="8" rx="2"/><rect x="16" y="8" width="6" height="8" rx="2"/><path o d="M10 12h4M12.5 10l1.5 2-1.5 2"/>'],
+['approval','Automation','approval step review check sign off','<rect x="2" y="8" width="8" height="8" rx="2"/><path o d="M12 12h2.5"/><circle cx="19" cy="12" r="3.2"/><path k d="M17.4 12l1.1 1.1 2.1-2.2"/>'],
+['start-node','Automation','start node begin entry flow','<circle cx="12" cy="12" r="8"/>'],
+['end-node','Automation','end node finish stop terminate flow','<circle cx="12" cy="12" r="9"/><circle f cx="12" cy="12" r="4.5"/>'],
+['auto-email','Automation','automatic email send auto reply sequence','<rt d="2 7 17 13 3 19 6 5.5"/><path k d="M3.5 10l6 4.5 4-3"/><path b d="M21.17 1.8L16.92 5.71L19.13 5.71L17.94 8.6L21.85 4.52L19.64 4.52Z"/>'],
+['auto-document','Automation','automatic document generate auto report','<rt d="4 3 16 18 3 19 5 5.5"/><path k d="M8 12h8M8 16h5"/><path b d="M21.17 1.8L16.92 5.71L19.13 5.71L17.94 8.6L21.85 4.52L19.64 4.52Z"/>'],
+['auto-task','Automation','automatic task auto create todo','<rt d="4 3 16 18 3 19 5 5.5"/><path k d="M8.5 13l2.2 2.2 4-4.4"/><path b d="M21.17 1.8L16.92 5.71L19.13 5.71L17.94 8.6L21.85 4.52L19.64 4.52Z"/>'],
+['auto-calendar','Automation','automatic calendar schedule auto event','<rt d="3 5 17 16 3 19 5 5.5"/><path k d="M3 10.5h17"/><path o d="M8 3v4M13.5 3v4"/><path b d="M21.17 1.8L16.92 5.71L19.13 5.71L17.94 8.6L21.85 4.52L19.64 4.52Z"/>'],
+['auto-chat','Automation','automatic chat message auto reply bot','<pg d="2 7 16 7 16 18 10.5 18 7 21.5 7 18 2 18" r="2"/><path b d="M21.17 1.8L16.92 5.71L19.13 5.71L17.94 8.6L21.85 4.52L19.64 4.52Z"/>'],
+['auto-user','Automation','automatic user onboarding auto assign person','<circle cx="9.5" cy="8" r="3.5"/><path d="M3 20c0-3.3 3-5.5 6.5-5.5s6.5 2.2 6.5 5.5z"/><path b d="M21.17 1.8L16.92 5.71L19.13 5.71L17.94 8.6L21.85 4.52L19.64 4.52Z"/>'],
+['arrow-up','Arrows','arrow up direction pointer','<path o d="M12 20.5L12 3.5M16.5 8L12 3.5L7.5 8"/>'],
+['arrow-down','Arrows','arrow down direction pointer','<path o d="M12 3.5L12 20.5M7.5 16L12 20.5L16.5 16"/>'],
+['arrow-left','Arrows','arrow left direction pointer','<path o d="M20.5 12L3.5 12M8 7.5L3.5 12L8 16.5"/>'],
+['arrow-right','Arrows','arrow right direction pointer','<path o d="M3.5 12L20.5 12M16 16.5L20.5 12L16 7.5"/>'],
+['arrow-up-right','Arrows','arrow up right direction pointer','<path o d="M5.5 18.5L18.5 5.5M13.5 5.5L18.5 5.5L18.5 10.5"/>'],
+['arrow-up-left','Arrows','arrow up left direction pointer','<path o d="M18.5 18.5L5.5 5.5M10.5 5.5L5.5 5.5L5.5 10.5"/>'],
+['arrow-down-right','Arrows','arrow down right direction pointer','<path o d="M5.5 5.5L18.5 18.5M13.5 18.5L18.5 18.5L18.5 13.5"/>'],
+['arrow-down-left','Arrows','arrow down left direction pointer','<path o d="M18.5 5.5L5.5 18.5M10.5 18.5L5.5 18.5L5.5 13.5"/>'],
+['chevron-up','Arrows','chevron up caret angle expand collapse','<path o d="M17.5 14.75L12 9.25L6.5 14.75"/>'],
+['chevron-down','Arrows','chevron down caret angle expand collapse','<path o d="M6.5 9.25L12 14.75L17.5 9.25"/>'],
+['chevron-left','Arrows','chevron left caret angle expand collapse','<path o d="M14.75 6.5L9.25 12L14.75 17.5"/>'],
+['chevron-right','Arrows','chevron right caret angle expand collapse','<path o d="M9.25 17.5L14.75 12L9.25 6.5"/>'],
+['chevrons-up','Arrows','double chevron up fast skip','<path o d="M17.5 17.95L12 12.45L6.5 17.95M17.5 11.55L12 6.05L6.5 11.55"/>'],
+['chevrons-down','Arrows','double chevron down fast skip','<path o d="M6.5 6.05L12 11.55L17.5 6.05M6.5 12.45L12 17.95L17.5 12.45"/>'],
+['chevrons-left','Arrows','double chevron left fast skip','<path o d="M17.95 6.5L12.45 12L17.95 17.5M11.55 6.5L6.05 12L11.55 17.5"/>'],
+['chevrons-right','Arrows','double chevron right fast skip','<path o d="M6.05 17.5L11.55 12L6.05 6.5M12.45 17.5L17.95 12L12.45 6.5"/>'],
+['arrow-bar-up','Arrows','arrow to edge up bar end limit','<path o d="M12 20.5L12 7.5M16 11.5L12 7.5L8 11.5M17 3.5L7 3.5"/>'],
+['arrow-bar-down','Arrows','arrow to edge down bar end limit','<path o d="M12 3.5L12 16.5M8 12.5L12 16.5L16 12.5M7 20.5L17 20.5"/>'],
+['arrow-bar-left','Arrows','arrow to edge left bar end limit','<path o d="M20.5 12L7.5 12M11.5 8L7.5 12L11.5 16M3.5 7L3.5 17"/>'],
+['arrow-bar-right','Arrows','arrow to edge right bar end limit','<path o d="M3.5 12L16.5 12M12.5 16L16.5 12L12.5 8M20.5 17L20.5 7"/>'],
+['arrow-block-up','Arrows','block arrow up fat bold pointer','<pg d="12 3 20 11 15 11 15 21 9 21 9 11 4 11" r="1.2"/>'],
+['arrow-block-right','Arrows','block arrow right fat bold pointer','<pg d="21 12 13 20 13 15 3 15 3 9 13 9 13 4" r="1.2"/>'],
+['arrow-block-down','Arrows','block arrow down fat bold pointer','<pg d="12 21 4 13 9 13 9 3 15 3 15 13 20 13" r="1.2"/>'],
+['arrow-block-left','Arrows','block arrow left fat bold pointer','<pg d="3 12 11 4 11 9 21 9 21 15 11 15 11 20" r="1.2"/>'],
+['arrow-both-horizontal','Arrows','two way horizontal left right both','<path o d="M3.5 12L20.5 12M8 7.5L3.5 12L8 16.5M16 7.5L20.5 12L16 16.5"/>'],
+['arrow-both-vertical','Arrows','two way vertical up down both','<path o d="M12 3.5L12 20.5M7.5 8L12 3.5L16.5 8M7.5 16L12 20.5L16.5 16"/>'],
+['arrow-both-diagonal-up','Arrows','two way diagonal resize expand','<path o d="M5.5 18.5L18.5 5.5M13.5 5.5L18.5 5.5L18.5 10.5M10.5 18.5L5.5 18.5L5.5 13.5"/>'],
+['arrow-both-diagonal-down','Arrows','two way diagonal resize expand','<path o d="M5.5 5.5L18.5 18.5M10.5 5.5L5.5 5.5L5.5 10.5M13.5 18.5L18.5 18.5L18.5 13.5"/>'],
+['swap-vertical','Arrows','swap vertical up down exchange sort','<path o d="M8 20V5M4.5 8.5L8 5l3.5 3.5M16 4v15M12.5 15.5L16 19l3.5-3.5"/>'],
+['expand-corners','Arrows','expand corners fullscreen maximize outward','<path o d="M9 3.5H3.5V9M3.5 3.5L10 10M15 3.5h5.5V9M20.5 3.5L14 10M9 20.5H3.5V15M3.5 20.5L10 14M15 20.5h5.5V15M20.5 20.5L14 14"/>'],
+['collapse-corners','Arrows','collapse corners minimize shrink inward','<path o d="M3.5 10H10V3.5M10 10L3.5 3.5M20.5 10H14V3.5M14 10l6.5-6.5M3.5 14H10v6.5M10 14l-6.5 6.5M20.5 14H14v6.5M14 14l6.5 6.5"/>'],
+['arrow-move','Arrows','move drag pan four way cross','<path o d="M12 3v18M3 12h18M9 6l3-3 3 3M9 18l3 3 3-3M6 9l-3 3 3 3M18 9l3 3-3 3"/>'],
+['arrow-loop','Arrows','loop repeat cycle arrows rectangle','<path o d="M4 11V9a3 3 0 0 1 3-3h11M15 3l3 3-3 3M20 13v2a3 3 0 0 1-3 3H6M9 21l-3-3 3-3"/>'],
+['arrow-turn-down-left','Arrows','turn corner down left return enter','<path o d="M19 6L19 14L6 14M10 10L6 14L10 18"/>'],
+['arrow-turn-left-up','Arrows','turn corner left up return enter','<path o d="M18 19L10 19L10 6M14 10L10 6L6 10"/>'],
+['arrow-turn-up-right','Arrows','turn corner up right return enter','<path o d="M5 18L5 10L18 10M14 14L18 10L14 6"/>'],
+['arrow-turn-right-down','Arrows','turn corner right down return enter','<path o d="M6 5L14 5L14 18M10 14L14 18L18 14"/>'],
+['arrow-turn-down-right','Arrows','turn corner down right return enter','<path o d="M5 6L5 14L18 14M14 10L18 14L14 18"/>'],
+['arrow-turn-left-down','Arrows','turn corner left down return enter','<path o d="M18 5L10 5L10 18M14 14L10 18L6 14"/>'],
+['arrow-turn-up-left','Arrows','turn corner up left return enter','<path o d="M19 18L19 10L6 10M10 14L6 10L10 6"/>'],
+['arrow-turn-right-up','Arrows','turn corner right up return enter','<path o d="M6 19L14 19L14 6M10 10L14 6L18 10"/>'],
+['arrow-left-circle','Arrows','arrow left circle','<circle cx="12" cy="12" r="9"/><path k d="M16.5 12L7.5 12M10.5 9L7.5 12L10.5 15"/>'],
+['arrow-right-circle','Arrows','arrow right circle','<circle cx="12" cy="12" r="9"/><path k d="M7.5 12L16.5 12M13.5 15L16.5 12L13.5 9"/>'],
+['arrow-up-right-circle','Arrows','arrow up right circle','<circle cx="12" cy="12" r="9"/><path k d="M8.4 15.6L15.6 8.4M12.4 8.4L15.6 8.4L15.6 11.6"/>'],
+['arrow-up-left-circle','Arrows','arrow up left circle','<circle cx="12" cy="12" r="9"/><path k d="M15.6 15.6L8.4 8.4M11.6 8.4L8.4 8.4L8.4 11.6"/>'],
+['arrow-down-right-circle','Arrows','arrow down right circle','<circle cx="12" cy="12" r="9"/><path k d="M8.4 8.4L15.6 15.6M12.4 15.6L15.6 15.6L15.6 12.4"/>'],
+['arrow-down-left-circle','Arrows','arrow down left circle','<circle cx="12" cy="12" r="9"/><path k d="M15.6 8.4L8.4 15.6M11.6 15.6L8.4 15.6L8.4 12.4"/>'],
+['chevron-up-circle','Arrows','chevron up circle','<circle cx="12" cy="12" r="9"/><path k d="M15.2 13.6L12 10.4L8.8 13.6"/>'],
+['chevron-down-circle','Arrows','chevron down circle','<circle cx="12" cy="12" r="9"/><path k d="M8.8 10.4L12 13.6L15.2 10.4"/>'],
+['chevron-left-circle','Arrows','chevron left circle','<circle cx="12" cy="12" r="9"/><path k d="M13.6 8.8L10.4 12L13.6 15.2"/>'],
+['chevron-right-circle','Arrows','chevron right circle','<circle cx="12" cy="12" r="9"/><path k d="M10.4 15.2L13.6 12L10.4 8.8"/>'],
+['chevrons-up-circle','Arrows','double chevron up circle','<circle cx="12" cy="12" r="9"/><path k d="M15.2 15.8L12 12.6L8.8 15.8M15.2 11.4L12 8.2L8.8 11.4"/>'],
+['chevrons-down-circle','Arrows','double chevron down circle','<circle cx="12" cy="12" r="9"/><path k d="M8.8 8.2L12 11.4L15.2 8.2M8.8 12.6L12 15.8L15.2 12.6"/>'],
+['chevrons-left-circle','Arrows','double chevron left circle','<circle cx="12" cy="12" r="9"/><path k d="M15.8 8.8L12.6 12L15.8 15.2M11.4 8.8L8.2 12L11.4 15.2"/>'],
+['chevrons-right-circle','Arrows','double chevron right circle','<circle cx="12" cy="12" r="9"/><path k d="M8.2 15.2L11.4 12L8.2 8.8M12.6 15.2L15.8 12L12.6 8.8"/>'],
+['arrow-bar-up-circle','Arrows','arrow bar up circle','<circle cx="12" cy="12" r="9"/><path k d="M12 16.2L12 9.4M14.6 12L12 9.4L9.4 12M15 6.7L9 6.7"/>'],
+['arrow-bar-down-circle','Arrows','arrow bar down circle','<circle cx="12" cy="12" r="9"/><path k d="M12 7.8L12 14.6M9.4 12L12 14.6L14.6 12M9 17.3L15 17.3"/>'],
+['arrow-bar-left-circle','Arrows','arrow bar left circle','<circle cx="12" cy="12" r="9"/><path k d="M16.2 12L9.4 12M12 9.4L9.4 12L12 14.6M6.7 9L6.7 15"/>'],
+['arrow-bar-right-circle','Arrows','arrow bar right circle','<circle cx="12" cy="12" r="9"/><path k d="M7.8 12L14.6 12M12 14.6L14.6 12L12 9.4M17.3 15L17.3 9"/>'],
+['arrow-both-horizontal-circle','Arrows','two way horizontal circle','<circle cx="12" cy="12" r="9"/><path k d="M7.5 12L16.5 12M10.5 9L7.5 12L10.5 15M13.5 9L16.5 12L13.5 15"/>'],
+['arrow-both-vertical-circle','Arrows','two way vertical circle','<circle cx="12" cy="12" r="9"/><path k d="M12 7.5L12 16.5M9 10.5L12 7.5L15 10.5M9 13.5L12 16.5L15 13.5"/>'],
+['arrow-up-square','Arrows','arrow up square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M12 16.5L12 7.5M15 10.5L12 7.5L9 10.5"/>'],
+['arrow-down-square','Arrows','arrow down square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M12 7.5L12 16.5M9 13.5L12 16.5L15 13.5"/>'],
+['arrow-left-square','Arrows','arrow left square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M16.5 12L7.5 12M10.5 9L7.5 12L10.5 15"/>'],
+['arrow-right-square','Arrows','arrow right square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M7.5 12L16.5 12M13.5 15L16.5 12L13.5 9"/>'],
+['arrow-up-right-square','Arrows','arrow up right square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M8.4 15.6L15.6 8.4M12.4 8.4L15.6 8.4L15.6 11.6"/>'],
+['arrow-up-left-square','Arrows','arrow up left square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M15.6 15.6L8.4 8.4M11.6 8.4L8.4 8.4L8.4 11.6"/>'],
+['arrow-down-right-square','Arrows','arrow down right square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M8.4 8.4L15.6 15.6M12.4 15.6L15.6 15.6L15.6 12.4"/>'],
+['arrow-down-left-square','Arrows','arrow down left square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M15.6 8.4L8.4 15.6M11.6 15.6L8.4 15.6L8.4 12.4"/>'],
+['chevron-up-square','Arrows','chevron up square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M15.2 13.6L12 10.4L8.8 13.6"/>'],
+['chevron-down-square','Arrows','chevron down square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M8.8 10.4L12 13.6L15.2 10.4"/>'],
+['chevron-left-square','Arrows','chevron left square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M13.6 8.8L10.4 12L13.6 15.2"/>'],
+['chevron-right-square','Arrows','chevron right square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M10.4 15.2L13.6 12L10.4 8.8"/>'],
+['chevrons-up-square','Arrows','double chevron up square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M15.2 15.8L12 12.6L8.8 15.8M15.2 11.4L12 8.2L8.8 11.4"/>'],
+['chevrons-down-square','Arrows','double chevron down square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M8.8 8.2L12 11.4L15.2 8.2M8.8 12.6L12 15.8L15.2 12.6"/>'],
+['chevrons-left-square','Arrows','double chevron left square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M15.8 8.8L12.6 12L15.8 15.2M11.4 8.8L8.2 12L11.4 15.2"/>'],
+['chevrons-right-square','Arrows','double chevron right square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M8.2 15.2L11.4 12L8.2 8.8M12.6 15.2L15.8 12L12.6 8.8"/>'],
+['arrow-bar-up-square','Arrows','arrow bar up square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M12 16.2L12 9.4M14.6 12L12 9.4L9.4 12M15 6.7L9 6.7"/>'],
+['arrow-bar-down-square','Arrows','arrow bar down square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M12 7.8L12 14.6M9.4 12L12 14.6L14.6 12M9 17.3L15 17.3"/>'],
+['arrow-bar-left-square','Arrows','arrow bar left square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M16.2 12L9.4 12M12 9.4L9.4 12L12 14.6M6.7 9L6.7 15"/>'],
+['arrow-bar-right-square','Arrows','arrow bar right square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M7.8 12L14.6 12M12 14.6L14.6 12L12 9.4M17.3 15L17.3 9"/>'],
+['arrow-both-horizontal-square','Arrows','two way horizontal square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M7.5 12L16.5 12M10.5 9L7.5 12L10.5 15M13.5 9L16.5 12L13.5 15"/>'],
+['arrow-both-vertical-square','Arrows','two way vertical square','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M12 7.5L12 16.5M9 10.5L12 7.5L15 10.5M9 13.5L12 16.5L15 13.5"/>'],
+['keyframe','Animation','keyframe diamond animation key marker','<pg d="12 3 21 12 12 21 3 12" r="2.5"/>'],
+['keyframe-add','Animation','add keyframe new animation','<pg d="10 7 17 14 10 21 3 14" r="2"/><path o d="M19 3.5v5M16.5 6h5"/>'],
+['keyframe-remove','Animation','remove keyframe delete animation','<pg d="10 7 17 14 10 21 3 14" r="2"/><path o d="M16.5 6h5"/>'],
+['keyframe-center','Animation','keyframe center anchor origin','<pg d="12 7 17 12 12 17 7 12" r="1.2"/><path o d="M12 2.5V5M12 19v2.5M2.5 12H5M19 12h2.5"/>'],
+['keyframe-horizontal','Animation','keyframe horizontal position x axis','<pg d="12 7 17 12 12 17 7 12" r="1.2"/><path o d="M3 12h2.5M18.5 12H21"/>'],
+['keyframe-vertical','Animation','keyframe vertical position y axis','<pg d="12 7 17 12 12 17 7 12" r="1.2"/><path o d="M12 3v2.5M12 18.5V21"/>'],
+['keyframe-start','Animation','keyframe start first frame','<path o d="M4 4v16"/><pg d="14 7 19 12 14 17 9 12" r="1.2"/>'],
+['keyframe-end','Animation','keyframe end last frame','<pg d="10 7 15 12 10 17 5 12" r="1.2"/><path o d="M20 4v16"/>'],
+['keyframe-bottom','Animation','keyframe bottom align ground','<pg d="12 4.5 17 9.5 12 14.5 7 9.5" r="1.2"/><path o d="M12 14.5V20M5 20h14"/>'],
+['keyframe-top','Animation','keyframe top align ceiling','<pg d="12 9.5 17 14.5 12 19.5 7 14.5" r="1.2"/><path o d="M12 4v5.5M5 4h14"/>'],
+['keyframe-next','Animation','next keyframe forward','<pg d="6.5 7.5 11.0 12 6.5 16.5 2.0 12" r="1.2"/><path o d="M13.5 7.5l4.5 4.5-4.5 4.5M17.5 7.5l4.5 4.5-4.5 4.5"/>'],
+['keyframe-previous','Animation','previous keyframe backward','<pg d="17.5 7.5 22.0 12 17.5 16.5 13.0 12" r="1.2"/><path o d="M10.5 7.5L6 12l4.5 4.5M6.5 7.5L2 12l4.5 4.5"/>'],
+['ease-in','Animation','ease in slow start easing curve','<path o d="M4 20C13 20 17 14 20 4"/><circle b cx="4" cy="20" r="1.5"/><circle b cx="20" cy="4" r="1.5"/>'],
+['ease-out','Animation','ease out slow end easing curve','<path o d="M4 20C7 10 11 4 20 4"/><circle b cx="4" cy="20" r="1.5"/><circle b cx="20" cy="4" r="1.5"/>'],
+['ease-in-out','Animation','ease in out smooth easing curve','<path o d="M4 20C12 20 12 4 20 4"/><circle b cx="4" cy="20" r="1.5"/><circle b cx="20" cy="4" r="1.5"/>'],
+['ease-linear','Animation','linear constant speed easing','<path o d="M4 20L20 4"/><circle b cx="4" cy="20" r="1.5"/><circle b cx="20" cy="4" r="1.5"/>'],
+['ease-custom','Animation','custom bezier easing curve handles','<path o d="M4 20C4 8 20 16 20 4M4 20V8M20 4v12"/><circle b cx="4" cy="20" r="1.5"/><circle b cx="20" cy="4" r="1.5"/><circle b cx="4" cy="8" r="1.3"/><circle b cx="20" cy="16" r="1.3"/>'],
+['ease-spring','Animation','spring overshoot elastic easing','<path o d="M3 20C6 20 8 4 11 4s3.5 9 6 9 2-1.5 4-1.5"/><circle b cx="3" cy="20" r="1.5"/><circle b cx="21" cy="11.5" r="1.5"/>'],
+['ease-bounce','Animation','bounce easing drop ground','<path o d="M3 20c0-8 1.5-15 3-15s3 7 3 15c0-5 1.5-9 3.5-9S16 15 16 20c0-2.5 1-4 2.5-4S21 17.5 21 20M3 21.5h18"/>'],
+['motion-path','Animation','motion path trajectory route','<path o d="M5 17c0-9 13-4 14-11M16 6h3.5v3.5"/><circle cx="5" cy="17" r="2"/>'],
+['motion-trail','Animation','motion trail ghost trace movement','<circle cx="5" cy="19" r="1.5"/><circle cx="11" cy="13" r="2.2"/><circle cx="18" cy="6" r="3"/>'],
+['onion-skin','Animation','onion skin ghost frames previous','<rect o x="3" y="3" width="12" height="12" rx="3" stroke-dasharray="2.4 2.4"/><rect x="9" y="9" width="12" height="12" rx="3"/>'],
+['slide-right','Animation','slide right move in direction','<circle cx="5" cy="12" r="1.8"/><path o d="M9 12h11M16.5 8.5L20 12l-3.5 3.5"/>'],
+['slide-left','Animation','slide left move out direction','<circle cx="19" cy="12" r="1.8"/><path o d="M15 12H4M7.5 8.5L4 12l3.5 3.5"/>'],
+['slide-up','Animation','slide up rise direction','<circle cx="12" cy="19" r="1.8"/><path o d="M12 15V4M8.5 7.5L12 4l3.5 3.5"/>'],
+['slide-down','Animation','slide down drop direction','<circle cx="12" cy="5" r="1.8"/><path o d="M12 9v11M8.5 16.5L12 20l3.5-3.5"/>'],
+['fade','Animation','fade opacity transparency dissolve','<circle cx="12" cy="12" r="9"/><path f d="M12 3a9 9 0 0 1 0 18z"/>'],
+['scale-up','Animation','scale up grow enlarge resize','<rect x="3" y="11" width="10" height="10" rx="2"/><path o d="M14 10l7-7M15.5 3H21v5.5"/>'],
+['spin','Animation','spin rotate loop turn','<path o d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3L19.5 8.8M19.5 4.5v4.3h-4.3"/><circle b cx="12" cy="12" r="1.5"/>'],
+['bounce','Animation','bounce ball jump drop','<circle cx="12" cy="13.5" r="5"/><path o d="M6 21h12M12 2.5v3M7.5 4l1.2 2.3M16.5 4l-1.2 2.3"/>'],
+['ripple','Animation','ripple pulse wave radiate','<circle cx="12" cy="12" r="2.5"/><path o d="M8.2 8.2a5.4 5.4 0 0 0 0 7.6M15.8 8.2a5.4 5.4 0 0 1 0 7.6M5.4 5.4a9.4 9.4 0 0 0 0 13.2M18.6 5.4a9.4 9.4 0 0 1 0 13.2"/>'],
+['shake','Animation','shake wiggle vibrate error','<rect x="7" y="5" width="10" height="14" rx="3"/><path o d="M3.5 9v6M20.5 9v6"/>'],
+['stagger','Animation','stagger cascade delay sequence','<rect x="3" y="4" width="10" height="4" rx="1"/><rect x="7" y="10" width="10" height="4" rx="1"/><rect x="11" y="16" width="10" height="4" rx="1"/>'],
+['keyframe-track','Animation','keyframe track timeline ruler','<pg d="5.5 6.2 8.3 9 5.5 11.8 2.7 9" r="0.8"/><pg d="12 6.2 14.8 9 12 11.8 9.2 9" r="0.8"/><pg d="18.5 6.2 21.3 9 18.5 11.8 15.7 9" r="0.8"/><path o d="M3 19h18M3 16.5v5M12 16.5v5M21 16.5v5"/>'],
+['morph','Animation','morph shape transform transition','<rect x="3" y="4" width="10" height="10" rx="2"/><circle cx="17" cy="17" r="4"/>'],
+['cat','Animal','cat kitten pet feline','<pg d="4 3 8.3 6 15.7 6 20 3 20 13 16 20 8 20 4 13" r="2.2"/><path k d="M9 12h.01M15 12h.01"/><path k d="M10.8 14.8h2.4L12 16.2zM12 16.2v.8M10.4 17.8c.5.5 1 .7 1.6.7s1.1-.2 1.6-.7"/>'],
+['dog','Animal','dog puppy pet canine','<pg d="7 4 17 4 17 14 14 20 10 20 7 14" r="2"/><pg d="2.5 7 7 4 7 14 3.5 14.5" r="1.2"/><pg d="21.5 7 17 4 17 14 20.5 14.5" r="1.2"/><path k d="M10 10h.01M14 10h.01"/><path k d="M10.5 14.5h3L12 16.8z"/>'],
+['rabbit','Animal','rabbit bunny hare pet','<pg d="6.5 11 17.5 11 20 16 16.5 21 7.5 21 4 16" r="2.5"/><pg d="7 2 10 2 11 11 6.5 11" r="1.2"/><pg d="14 2 17 2 17.5 11 13 11" r="1.2"/><path k d="M9 15.5h.01M15 15.5h.01M12 18h.01"/><path k d="M10.6 19.4c.4.4.9.6 1.4.6s1-.2 1.4-.6"/>'],
+['bear','Animal','bear wild teddy','<circle cx="12" cy="14" r="7"/><circle cx="5.9" cy="6.7" r="2.5"/><circle cx="18.1" cy="6.7" r="2.5"/><path k d="M9.5 13h.01M14.5 13h.01"/><path k d="M10.8 15.6h2.4L12 17z"/>'],
+['panda','Animal','panda bear china bamboo','<circle cx="12" cy="14" r="7"/><circle b cx="5.9" cy="6.7" r="2.5"/><circle b cx="18.1" cy="6.7" r="2.5"/><circle f cx="9.3" cy="13.2" r="1.9"/><circle f cx="14.7" cy="13.2" r="1.9"/><path k d="M12 16.5h.01"/><path k d="M10.5 18c.5.4 1 .6 1.5.6s1-.2 1.5-.6"/>'],
+['fox','Animal','fox wild animal red','<pg d="4 3 9 7 15 7 20 3 20 11 12 21 4 11" r="2"/><path k d="M9 11.5h.01M15 11.5h.01M12 18.2h.01"/><path k d="M4.5 11.5l4.5 3.2M19.5 11.5l-4.5 3.2"/>'],
+['lion','Animal','lion king mane big cat','<pg d="12 1.6 15.37 3.87 19.35 4.65 20.13 8.63 22.4 12 20.13 15.37 19.35 19.35 15.37 20.13 12 22.4 8.63 20.13 4.65 19.35 3.87 15.37 1.6 12 3.87 8.63 4.65 4.65 8.63 3.87" r="1.5"/><path k d="M9.5 11h.01M14.5 11h.01"/><path k d="M10.8 13.4h2.4L12 14.9zM12 14.9v1.3M10.2 17c.5.4 1.1.6 1.8.6s1.3-.2 1.8-.6"/>'],
+['monkey','Animal','monkey ape primate','<circle cx="12" cy="12.5" r="6.8"/><circle cx="3.2" cy="12.5" r="2.3"/><circle cx="20.8" cy="12.5" r="2.3"/><path k d="M8 11c0-1.3.9-2.2 2-2.2s2 .8 2 .8 .9-.8 2-.8 2 .9 2 2.2c0 1.6-1 3.2-4 3.2s-4-1.6-4-3.2z"/><path k d="M10 11h.01M14 11h.01"/><path k d="M10 16.4c.5.6 1.2.9 2 .9s1.5-.3 2-.9"/>'],
+['pig','Animal','pig hog farm piglet','<pg d="3 6 21 6 21 15 16 20 8 20 3 15" r="3"/><pg d="3 6 4.5 2 9 6" r="0.8"/><pg d="15 6 19.5 2 21 6" r="0.8"/><rect k x="8.5" y="12" width="7" height="5.5" rx="2"/><path k d="M10.5 14.8h.01M13.5 14.8h.01M8 9.5h.01M16 9.5h.01"/>'],
+['cow','Animal','cow cattle farm dairy','<pg d="6 5 18 5 19 14 16 21 8 21 5 14" r="2.5"/><path o d="M6.8 5L4.5 2M17.2 5l2.3-3"/><pg d="2 8 5.7 7.5 5.4 11 2.5 11.5" r="0.8"/><pg d="22 8 18.3 7.5 18.6 11 21.5 11.5" r="0.8"/><rect k x="8" y="14" width="8" height="5.5" rx="2"/><path k d="M10.2 16.8h.01M13.8 16.8h.01M8.8 9.5h.01M15.2 9.5h.01"/>'],
+['sheep','Animal','sheep lamb wool farm','<pg d="12 1.8 15.41 3.78 19.21 4.79 20.22 8.59 22.2 12 20.22 15.41 19.21 19.21 15.41 20.22 12 22.2 8.59 20.22 4.79 19.21 3.78 15.41 1.8 12 3.78 8.59 4.79 4.79 8.59 3.78" r="1.6"/><path f d="M12 8c2.4 0 3.6 1.9 3.6 4.4 0 2.9-1.6 5.6-3.6 5.6s-3.6-2.7-3.6-5.6C8.4 9.9 9.6 8 12 8z"/>'],
+['horse','Animal','horse stallion pony ride','<pg d="7 2 10.5 4.5 13.5 4.5 17 2 17.5 9.5 15.5 21 8.5 21 6.5 9.5" r="2"/><path k d="M9.2 10h.01M14.8 10h.01M10.5 18h.01M13.5 18h.01"/>'],
+['mouse','Animal','mouse rat rodent small','<circle cx="6.8" cy="6" r="3.2"/><circle cx="17.2" cy="6" r="3.2"/><pg d="5 10 19 10 19 14 14.5 20 12 21 9.5 20 5 14" r="2.5"/><path k d="M9 14h.01M15 14h.01M12 18.2h.01"/><path o d="M2 14.5h2.5M22 14.5h-2.5"/>'],
+['owl','Animal','owl bird night wise','<pg d="4 4 8 6 16 6 20 4 20 17 16 21 8 21 4 17" r="2.5"/><circle k cx="8.5" cy="11" r="2.8"/><circle k cx="15.5" cy="11" r="2.8"/><path k d="M8.5 11h.01M15.5 11h.01"/><path k d="M10.8 13.6h2.4L12 16z"/>'],
+['frog','Animal','frog toad amphibian pond','<circle cx="7.5" cy="7.5" r="3.3"/><circle cx="16.5" cy="7.5" r="3.3"/><pg d="2.5 11 21.5 11 21.5 16 17 20.5 7 20.5 2.5 16" r="2.5"/><path k d="M7.5 7.5h.01M16.5 7.5h.01M10.5 13.5h.01M13.5 13.5h.01"/><path k d="M7 16.5c3 2 7 2 10 0"/>'],
+['penguin','Animal','penguin bird arctic antarctic','<pg d="12 2 17 4.5 19 11 18.5 17 15.5 21 8.5 21 5.5 17 5 11 7 4.5" r="3"/><path k d="M12 11.5c2.5 0 3.7 1.8 3.7 4 0 2-1.4 3.8-3.7 4.5-2.3-.7-3.7-2.5-3.7-4.5 0-2.2 1.2-4 3.7-4z"/><path k d="M10.3 7.2h.01M13.7 7.2h.01"/><path k d="M10.8 8.8h2.4L12 10.3z"/><path o d="M5 11.5L2.8 16M19 11.5l2.2 4.5"/>'],
+['elephant','Animal','elephant trunk big animal safari','<circle cx="5" cy="9" r="3"/><circle cx="19" cy="9" r="3"/><pg d="8 4 16 4 16 13 14 13 14 19.5 12 21.5 10 19.5 10 13 8 13" r="1.5"/><path k d="M10 8.5h.01M14 8.5h.01"/><path k d="M10.5 16h3"/>'],
+['chicken','Animal','chicken hen farm bird poultry','<circle cx="12" cy="13.5" r="7"/><pg d="9 6.7 9.3 3.5 10.8 4.5 12 2.5 13.2 4.5 14.7 3.5 15 6.7" r="0.5"/><path k d="M9 12h.01M15 12h.01"/><path k d="M10.8 14h2.4L12 16.3z"/>'],
+['fish','Animal','fish sea aquarium swim','<pg d="3 12 7 8 13 8 17 12 13 16 7 16" r="3"/><pg d="17 12 22 8 22 16" r="1"/><path k d="M7.5 11.2h.01"/><path k d="M10.5 9.5c1.2 1.4 1.2 3.6 0 5"/>'],
+['bird','Animal','bird tweet fly wing','<circle cx="10" cy="14" r="5.5"/><circle cx="17" cy="8" r="3"/><pg d="20 7.2 23 8.4 20 9.4" r="0.4"/><pg d="5 17.5 1.8 20 6 19.8" r="0.4"/><path k d="M6.8 13.5c2.2.6 4.2-.2 5.8-2.2"/><path k d="M17.6 7.4h.01"/>'],
+['butterfly','Animal','butterfly insect wings spring','<pg d="11 11 3.5 4 2.5 8 4.5 12 11 12" r="1.5"/><pg d="11 13 4.5 13.5 5.5 18 9 20.5 11 17" r="1.5"/><pg d="13 11 20.5 4 21.5 8 19.5 12 13 12" r="1.5"/><pg d="13 13 19.5 13.5 18.5 18 15 20.5 13 17" r="1.5"/><path o d="M12 6v14M12 6.5l-2-3.5M12 6.5l2-3.5"/>'],
+['bee','Animal','bee honey insect buzz','<pg d="6 14 8 9.5 16 9.5 18 14 16 18.5 8 18.5" r="3.5"/><circle cx="8.5" cy="6" r="2.6"/><circle cx="15.5" cy="6" r="2.6"/><path k d="M10 9.8v8.4M14 9.8v8.4"/><path o d="M18 14h2.5"/>'],
+['ladybug','Animal','ladybug ladybird insect beetle','<circle cx="12" cy="13.5" r="7"/><circle cx="12" cy="4.3" r="2"/><path k d="M12 6.5v14"/><path k d="M8.5 11h.01M15.5 11h.01M8.5 16h.01M15.5 16h.01"/><path o d="M11 3L9.5 2M13 3l1.5-1"/>'],
+['turtle','Animal','turtle tortoise shell slow','<pg d="12 6.5 18 9.5 18 16.5 12 19.5 6 16.5 6 9.5" r="2.5"/><circle cx="12" cy="3.8" r="1.9"/><circle cx="4.4" cy="9.5" r="1.7"/><circle cx="19.6" cy="9.5" r="1.7"/><circle cx="4.4" cy="16.5" r="1.7"/><circle cx="19.6" cy="16.5" r="1.7"/><path o d="M12 19.5V22"/><path k d="M12 10.5l3 1.7v3.6l-3 1.7-3-1.7v-3.6z"/>'],
+['spider','Animal','spider arachnid web legs','<circle cx="12" cy="15" r="4"/><circle cx="12" cy="8.5" r="2.5"/><path o d="M9.7 7.5L5 4M9 10l-6.5-1.5M8.2 14.5l-5.7 2M9.2 18l-3.7 3.5M14.3 7.5L19 4M15 10l6.5-1.5M15.8 14.5l5.7 2M14.8 18l3.7 3.5"/>'],
+['paw-print','Animal','paw print pet footprint animal track','<circle cx="5.5" cy="10.5" r="2"/><circle cx="9.5" cy="6" r="2"/><circle cx="14.5" cy="6" r="2"/><circle cx="18.5" cy="10.5" r="2"/><pg d="12 12 17 15.5 17.5 19.5 15 21 12 20 9 21 6.5 19.5 7 15.5" r="2.5"/>'],
+['bone','Animal','bone dog treat pet','<pg d="6 7 9 9.5 15 9.5 18 7 21 8.5 21 11.5 18.5 12 21 12.5 21 15.5 18 17 15 14.5 9 14.5 6 17 3 15.5 3 12.5 5.5 12 3 11.5 3 8.5" r="1.4"/>'],
+['pet-bowl','Animal','pet bowl food dish feeding','<pg d="3 12 21 12 18 20.5 6 20.5" r="2"/><path o d="M6.5 12c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/><path k d="M8 16.5h8"/>'],
+['pet-house','Animal','pet house kennel doghouse','<pg d="3 11 12 3 21 11 21 21 3 21" r="2"/><path k d="M9 21v-5a3 3 0 0 1 6 0v5"/>'],
+['chart-bar','Analytics','bar chart column graph compare','<rect x="4" y="12" width="4" height="9" rx="1"/><rect x="10" y="4" width="4" height="17" rx="1"/><rect x="16" y="9" width="4" height="12" rx="1"/>'],
+['chart-bar-horizontal','Analytics','horizontal bar chart ranking compare','<rect x="3" y="4" width="10" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="16" width="13" height="4" rx="1"/>'],
+['chart-stacked','Analytics','stacked bar chart segments breakdown','<rect x="3" y="15" width="4" height="6" rx="1"/><rect x="3" y="10" width="4" height="5" rx="1"/><rect x="10" y="13" width="4" height="8" rx="1"/><rect x="10" y="4" width="4" height="9" rx="1"/><rect x="17" y="16" width="4" height="5" rx="1"/><rect x="17" y="8" width="4" height="8" rx="1"/>'],
+['chart-histogram','Analytics','histogram distribution frequency bins','<rect x="2" y="14" width="4" height="7" rx="1"/><rect x="6" y="8" width="4" height="13" rx="1"/><rect x="10" y="4" width="4" height="17" rx="1"/><rect x="14" y="9" width="4" height="12" rx="1"/><rect x="18" y="15" width="4" height="6" rx="1"/>'],
+['chart-growth','Analytics','growth ascending bars increase','<rect x="3" y="15" width="4" height="6" rx="1"/><rect x="10" y="10" width="4" height="11" rx="1"/><rect x="17" y="4" width="4" height="17" rx="1"/>'],
+['chart-decline','Analytics','decline descending bars decrease drop','<rect x="3" y="4" width="4" height="17" rx="1"/><rect x="10" y="10" width="4" height="11" rx="1"/><rect x="17" y="15" width="4" height="6" rx="1"/>'],
+['chart-line','Analytics','line chart trend time series','<path o d="M3 3v18h18"/><path o d="M7 15l4-4 3 3 5-6"/>'],
+['chart-lines','Analytics','multi line chart compare series','<path o d="M3 3v18h18"/><path o d="M7 17l4-3 3 1.5 5-5.5M7 10l4-2 3 1 5-3"/>'],
+['chart-area','Analytics','area chart volume trend over time','<pg d="3 20 3 14 8 9 13 13 21 5 21 20" r="1.2"/>'],
+['chart-combo','Analytics','combo chart bars and line mixed','<rect x="4" y="13" width="4" height="8" rx="1"/><rect x="10" y="9" width="4" height="12" rx="1"/><rect x="16" y="11" width="4" height="10" rx="1"/><path o d="M3 6l6-2 5 3.5 7-4.5"/>'],
+['trend-up','Analytics','trend up growth increase rising','<path o d="M3 17l6-6 4 4 8-8M15 7h6v6"/>'],
+['trend-down','Analytics','trend down decline decrease falling','<path o d="M3 7l6 6 4-4 8 8M15 17h6v-6"/>'],
+['pie-chart','Analytics','pie chart share proportion breakdown','<path d="M12 3a9 9 0 1 0 9 9h-9z"/><path d="M15 3.5A9 9 0 0 1 20.5 9H15z"/>'],
+['chart-donut','Analytics','donut chart ring share segments','<path fill-rule="evenodd" d="M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18zM12 8a4 4 0 1 0 0 8a4 4 0 1 0 0-8z"/><path k d="M12 3v5M21 12h-5"/>'],
+['chart-scatter','Analytics','scatter plot correlation points','<path o d="M3 3v18h18"/><circle b cx="8" cy="15" r="1.3"/><circle b cx="12" cy="10" r="1.3"/><circle b cx="16" cy="14" r="1.3"/><circle b cx="18" cy="7.5" r="1.3"/><circle b cx="9" cy="8" r="1.3"/>'],
+['chart-bubble','Analytics','bubble chart size weighted scatter','<circle cx="7.5" cy="15.5" r="4.5"/><circle cx="16.5" cy="8" r="3.5"/><circle cx="17" cy="17" r="2.5"/>'],
+['chart-radar','Analytics','radar chart spider skills compare','<pg d="12 3 21 9.5 17.5 20.5 6.5 20.5 3 9.5" r="1"/><path k d="M12 12V3M12 12l9-2.5M12 12l5.5 8.5M12 12L6.5 20.5M12 12L3 9.5"/>'],
+['chart-candlestick','Analytics','candlestick chart stock price market','<path o d="M6 3.5V7M6 15v3.5M12 5.5V9M12 17v3.5M18 2.5V5M18 14v4"/><rect x="4" y="7" width="4" height="8" rx="1"/><rect x="10" y="9" width="4" height="8" rx="1"/><rect x="16" y="5" width="4" height="9" rx="1"/>'],
+['chart-waterfall','Analytics','waterfall chart change contribution','<rect x="3" y="3" width="4" height="9" rx="1"/><rect x="10" y="8" width="4" height="8" rx="1"/><rect x="17" y="12" width="4" height="9" rx="1"/><path o d="M7 12h3M14 16h3"/>'],
+['chart-funnel','Analytics','funnel chart conversion steps stages','<rect x="3" y="4" width="18" height="4" rx="1"/><rect x="6" y="10" width="12" height="4" rx="1"/><rect x="9" y="16" width="6" height="4" rx="1"/>'],
+['chart-heatmap','Analytics','heatmap grid intensity density','<rect x="3" y="3" width="4.5" height="4.5" rx="1"/><rect o x="9.75" y="3" width="4.5" height="4.5" rx="1"/><rect x="16.5" y="3" width="4.5" height="4.5" rx="1"/><rect o x="3" y="9.75" width="4.5" height="4.5" rx="1"/><rect x="9.75" y="9.75" width="4.5" height="4.5" rx="1"/><rect o x="16.5" y="9.75" width="4.5" height="4.5" rx="1"/><rect x="3" y="16.5" width="4.5" height="4.5" rx="1"/><rect o x="9.75" y="16.5" width="4.5" height="4.5" rx="1"/><rect x="16.5" y="16.5" width="4.5" height="4.5" rx="1"/>'],
+['chart-treemap','Analytics','treemap hierarchy size proportion','<rect x="3" y="3" width="9" height="18" rx="2"/><rect x="14" y="3" width="7" height="8" rx="2"/><rect x="14" y="13" width="7" height="8" rx="2"/>'],
+['chart-cohort','Analytics','cohort analysis retention table grid','<rect x="3" y="3" width="4.5" height="4.5" rx="1"/><rect x="9.75" y="3" width="4.5" height="4.5" rx="1"/><rect x="16.5" y="3" width="4.5" height="4.5" rx="1"/><rect x="3" y="9.75" width="4.5" height="4.5" rx="1"/><rect x="9.75" y="9.75" width="4.5" height="4.5" rx="1"/><rect x="3" y="16.5" width="4.5" height="4.5" rx="1"/>'],
+['retention-curve','Analytics','retention curve churn survival decay','<path o d="M3 3v18h18"/><path o d="M6 6c3 0 4 8 8 10s5 1 7 1"/>'],
+['forecast','Analytics','forecast prediction projection future','<path o d="M3 16l5-5 4 3 4-6"/><path o d="M16 8l5-3" stroke-dasharray=".01 3.2"/>'],
+['sparkline','Analytics','sparkline mini chart inline trend','<path o d="M2 16l4-5 3 3 4-7 3 4 6-5"/>'],
+['activity','Analytics','activity pulse heartbeat live uptime','<path o d="M2 12h4l2.5-6 4 12 2.5-6H22"/>'],
+['progress-bar','Analytics','progress bar completion percent status','<rect x="2" y="8" width="20" height="8" rx="4"/><rect f x="5" y="11" width="7" height="2" rx="1"/>'],
+['kpi-card','Analytics','kpi card metric stat scorecard','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M7 8h5M7 17l3.5-4 2.5 2 4-5"/>'],
+['report-chart','Analytics','report analytics document chart summary','<pg d="5 3 14 3 19 8 19 21 5 21" r="2"/><path k d="M14 3v5h5M9 17v-3M12 17v-5M15 17v-2.5"/>'],
+['alert-triangle','Alert','warning alert caution danger triangle','<pg d="12 3.5 21.5 20 2.5 20" r="2"/><path k d="M12 10v4.5M12 17.5v.01"/>'],
+['alert-circle','Alert','alert circle warning error exclamation','<circle cx="12" cy="12" r="9"/><path k d="M12 7.5v5.5M12 16.5v.01"/>'],
+['alert-square','Alert','alert square warning error exclamation','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M12 7.5v5.5M12 16.5v.01"/>'],
+['alert-diamond','Alert','alert diamond warning caution exclamation','<pg d="12 2.5 21.5 12 12 21.5 2.5 12" r="2.5"/><path k d="M12 7.5v5.5M12 16.5v.01"/>'],
+['alert-octagon','Alert','stop octagon halt alert critical','<pg d="8.5 3 15.5 3 21 8.5 21 15.5 15.5 21 8.5 21 3 15.5 3 8.5" r="1.5"/><path k d="M12 7.5v5.5M12 16.5v.01"/>'],
+['alert-hexagon','Alert','alert hexagon badge seal warning exclamation','<pg d="12 2 16.1 4.9 20.66 7 20.2 12 20.66 17 16.1 19.1 12 22 7.9 19.1 3.34 17 3.8 12 3.34 7 7.9 4.9" r="2.2"/><path k d="M12 7.5v5.5M12 16.5v.01"/>'],
+['exclamation','Alert','exclamation mark important note','<path o d="M12 5v9M12 18.5v.01"/>'],
+['info-circle','Alert','info circle information details help','<circle cx="12" cy="12" r="9"/><path k d="M12 11v5.5M12 7.5v.01"/>'],
+['info-square','Alert','info square information details','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M12 11v5.5M12 7.5v.01"/>'],
+['info-diamond','Alert','info diamond information details','<pg d="12 2.5 21.5 12 12 21.5 2.5 12" r="2.5"/><path k d="M12 11v5.5M12 7.5v.01"/>'],
+['help-circle','Alert','help circle question support faq','<circle cx="12" cy="12" r="9"/><path k d="M9.7 9.3a2.4 2.4 0 0 1 4.7.7c0 1.7-2.4 2-2.4 3.7M12 17.2v.01"/>'],
+['help-square','Alert','help square question support faq','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M9.7 9.3a2.4 2.4 0 0 1 4.7.7c0 1.7-2.4 2-2.4 3.7M12 17.2v.01"/>'],
+['bell','Alert','bell notification alert reminder','<path d="M12 3a5.5 5.5 0 0 0-5.5 5.5V12.5L4.5 16v1.5h15v-1.5l-2-3.5V8.5A5.5 5.5 0 0 0 12 3z"/><path o d="M10 21h4"/>'],
+['bell-dot','Alert','bell notification unread new alert','<path d="M10.5 3a5.5 5.5 0 0 0-5.5 5.5V12.5L3 16v1.5h15v-1.5l-2-3.5V8.5A5.5 5.5 0 0 0 10.5 3z"/><path o d="M8.5 21h4"/><circle b cx="19.5" cy="4.5" r="2.5"/>'],
+['bell-ringing','Alert','bell ringing alarm notification active','<path d="M12 3a5.5 5.5 0 0 0-5.5 5.5V12.5L4.5 16v1.5h15v-1.5l-2-3.5V8.5A5.5 5.5 0 0 0 12 3z"/><path o d="M10 21h4"/><path o d="M2 10c0-2 .5-3.5 1.5-5M22 10c0-2-.5-3.5-1.5-5"/>'],
+['bell-add','Alert','bell add subscribe notification new','<path d="M10.5 3a5.5 5.5 0 0 0-5.5 5.5V12.5L3 16v1.5h15v-1.5l-2-3.5V8.5A5.5 5.5 0 0 0 10.5 3z"/><path o d="M8.5 21h4"/><path o d="M19.5 2.5v4M17.5 4.5h4"/>'],
+['bell-remove','Alert','bell remove unsubscribe notification','<path d="M10.5 3a5.5 5.5 0 0 0-5.5 5.5V12.5L3 16v1.5h15v-1.5l-2-3.5V8.5A5.5 5.5 0 0 0 10.5 3z"/><path o d="M8.5 21h4"/><path o d="M17.5 4.5h4"/>'],
+['bell-off','Alert','bell off mute silent notifications disabled','<path d="M12 3a5.5 5.5 0 0 0-5.5 5.5V12.5L4.5 16v1.5h15v-1.5l-2-3.5V8.5A5.5 5.5 0 0 0 12 3z"/><path o d="M10 21h4"/><path k d="M4 4l16 16"/>'],
+['bell-snooze','Alert','bell snooze later reminder sleep','<path d="M10.5 3a5.5 5.5 0 0 0-5.5 5.5V12.5L3 16v1.5h15v-1.5l-2-3.5V8.5A5.5 5.5 0 0 0 10.5 3z"/><path o d="M8.5 21h4"/><path o d="M17.5 2.5h4l-4 4h4"/>'],
+['bell-ban','Alert','bell blocked disabled notification ban','<path d="M10.5 3a5.5 5.5 0 0 0-5.5 5.5V12.5L3 16v1.5h15v-1.5l-2-3.5V8.5A5.5 5.5 0 0 0 10.5 3z"/><path o d="M8.5 21h4"/><circle cx="19.5" cy="5" r="2.5"/><path k d="M17.9 6.6l3.2-3.2"/>'],
+['siren','Alert','siren alarm emergency incident alert','<path d="M6.5 16V11.5a5.5 5.5 0 0 1 11 0V16z"/><rect x="4" y="16" width="16" height="5" rx="2"/><path o d="M12 2.5V4M4.5 5.5l1.2 1.2M19.5 5.5l-1.2 1.2"/><path k d="M9.5 13v-1.5A2.5 2.5 0 0 1 12 9"/>'],
+['message-alert','Alert','message alert chat notification new unread','<pg d="2 7 16 7 16 18 10.5 18 7 21.5 7 18 2 18" r="2"/><circle b cx="19.5" cy="4.5" r="2.5"/>'],
+['alert-banner','Alert','alert banner message notice inline warning','<rect x="2" y="6" width="20" height="12" rx="3"/><path k d="M7 9.5v3M7 15v.01M11 10h7M11 14h5"/>'],
+['sparkle','AI','sparkle star magic ai generate','<path d="M12 3Q13.8 10.2 21 12Q13.8 13.8 12 21Q10.2 13.8 3 12Q10.2 10.2 12 3Z"/>'],
+['sparkles','AI','sparkles magic stars ai effects','<path d="M10.5 5.5Q12.1 11.9 18.5 13.5Q12.1 15.1 10.5 21.5Q8.9 15.1 2.5 13.5Q8.9 11.9 10.5 5.5Z"/><path d="M19 1.5Q19.7 4.3 22.5 5Q19.7 5.7 19 8.5Q18.3 5.7 15.5 5Q18.3 4.3 19 1.5Z"/>'],
+['magic-wand','AI','magic wand enhance auto fix','<pg d="2.94 18.94 5.06 21.06 17.06 9.06 14.94 6.94" r=".8"/><path b d="M19 1.8Q19.64 4.36 22.2 5Q19.64 5.64 19 8.2Q18.36 5.64 15.8 5Q18.36 4.36 19 1.8Z"/><path o d="M5 4h.01M21 13h.01"/>'],
+['ai-chip','AI','ai chip processor model hardware','<rect x="6" y="6" width="12" height="12" rx="3"/><path o d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/><path k d="M8.8 15l1.7-5 1.7 5M9.4 13.3h2.2M14.8 10v5"/>'],
+['ai-badge','AI','ai badge label generated tag','<rect x="2" y="6" width="20" height="12" rx="3"/><path k d="M8 15l2.5-6 2.5 6M8.9 13h3.2M16 9v6"/>'],
+['brain','AI','brain mind intelligence think','<path d="M9.5 4A3.5 3.5 0 0 0 6 7.5c-2 .5-3 2-3 4 0 1.4.7 2.5 1.8 3.2C4.6 16.5 5.6 19 8 19.5A3 3 0 0 0 12 20V4.5A3 3 0 0 0 9.5 4z"/><path d="M14.5 4A3.5 3.5 0 0 1 18 7.5c2 .5 3 2 3 4 0 1.4-.7 2.5-1.8 3.2.2 1.8-.8 4.3-3.2 4.8A3 3 0 0 1 12 20V4.5A3 3 0 0 1 14.5 4z"/><path k d="M9.5 9.2c-1.4 0-2.4 1-2.4 2.3M9 15c-.9 0-1.6.5-1.9 1.3M14.5 9.2c1.4 0 2.4 1 2.4 2.3M15 15c.9 0 1.6.5 1.9 1.3"/>'],
+['neural-network','AI','neural network nodes model layers deep learning','<circle cx="12" cy="12" r="2.5"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path o d="M9.49 9.49L7.16 7.16M14.51 9.49L16.84 7.16M9.49 14.51L7.16 16.84M14.51 14.51L16.84 16.84"/>'],
+['robot','AI','robot bot assistant agent','<rect x="4" y="8" width="16" height="12" rx="3"/><path o d="M12 8V5.5M2 12.5v3M22 12.5v3"/><circle cx="12" cy="4" r="1.3"/><path k d="M9 13.5h.01M15 13.5h.01M10 17h4"/>'],
+['ai-chat','AI','ai chat chatbot assistant conversation','<pg d="3 4 21 4 21 17 12.5 17 8 21.5 8 17 3 17" r="2"/><path f d="M12 7.1Q12.68 9.82 15.4 10.5Q12.68 11.18 12 13.9Q11.32 11.18 8.6 10.5Q11.32 9.82 12 7.1Z"/>'],
+['ai-search','AI','ai search find smart lookup','<circle cx="10.5" cy="10.5" r="6.5"/><path o d="M15.5 15.5L21 21"/><path f d="M10.5 7.7Q11.06 9.94 13.3 10.5Q11.06 11.06 10.5 13.3Q9.94 11.06 7.7 10.5Q9.94 9.94 10.5 7.7Z"/>'],
+['ai-document','AI','ai document text write generate','<rt d="4 3 16 18 3 19 5 5.5"/><path k d="M8 12h8M8 16h5"/><path b d="M19 2Q19.6 4.4 22 5Q19.6 5.6 19 8Q18.4 5.6 16 5Q18.4 4.4 19 2Z"/>'],
+['ai-image','AI','ai image picture generate art','<rt d="2 4 18 16 3 19 5 5.5"/><path k d="M3 17.5l5-5 4 4 3-3 4 4"/><circle k cx="7.5" cy="9" r="1.5"/><path b d="M19 2Q19.6 4.4 22 5Q19.6 5.6 19 8Q18.4 5.6 16 5Q18.4 4.4 19 2Z"/>'],
+['ai-video','AI','ai video clip generate movie','<rt d="2 4 18 16 3 19 5 5.5"/><path k d="M10 9v6l5-3z"/><path b d="M19 2Q19.6 4.4 22 5Q19.6 5.6 19 8Q18.4 5.6 16 5Q18.4 4.4 19 2Z"/>'],
+['ai-audio','AI','ai audio voice sound waveform','<path o d="M4 10v4M8 6v12M12 9v6M16 11v8"/><path b d="M19.5 2.5Q20.1 4.9 22.5 5.5Q20.1 6.1 19.5 8.5Q18.9 6.1 16.5 5.5Q18.9 4.9 19.5 2.5Z"/>'],
+['ai-mic','AI','ai microphone voice speech record','<rect x="7" y="2.5" width="8" height="11.5" rx="4"/><path o d="M4 11c0 4.4 3.1 7 7 7s7-2.6 7-7M11 18v3.5M8 21.5h6"/><path b d="M19.5 2.7Q20.06 4.94 22.3 5.5Q20.06 6.06 19.5 8.3Q18.94 6.06 16.7 5.5Q18.94 4.94 19.5 2.7Z"/>'],
+['ai-translate','AI','ai translate language convert','<pg d="2 3 13 3 13 12 8 12 5 15 5 12 2 12" r="1.5"/><pg d="13.5 11 22 11 22 19 19 19 16.5 21.5 16.5 19 13.5 19" r="1.5"/><path k d="M5.2 9.6l2.3-5.2 2.3 5.2M6 8h3M15.5 14h4.5M17.75 14v3.5"/>'],
+['ai-code','AI','ai code generate programming copilot','<path o d="M8 7l-5 5 5 5M16 7l5 5-5 5"/><path b d="M12 8.8Q12.64 11.36 15.2 12Q12.64 12.64 12 15.2Q11.36 12.64 8.8 12Q11.36 11.36 12 8.8Z"/>'],
+['ai-mail','AI','ai email write reply compose','<rt d="2 7 17 13 3 19 6 5.5"/><path k d="M3.5 10l6 4.5 4-3"/><path b d="M19 3Q19.6 5.4 22 6Q19.6 6.6 19 9Q18.4 6.6 16 6Q18.4 5.4 19 3Z"/>'],
+['ai-lightbulb','AI','ai idea lightbulb insight suggestion','<path d="M12 3a6 6 0 0 0-3.5 10.9c.7.6 1 1.3 1 2.1h5c0-.8.3-1.5 1-2.1A6 6 0 0 0 12 3z"/><path o d="M9.5 18.5h5M10.5 21h3"/><path f d="M12 6.7Q12.56 8.94 14.8 9.5Q12.56 10.06 12 12.3Q11.44 10.06 9.2 9.5Q11.44 8.94 12 6.7Z"/>'],
+['ai-shield','AI','ai shield secure protect smart security','<pg d="12 3 20 6 20 12 16.5 18 12 21 7.5 18 4 12 4 6" r="2.5"/><path f d="M12 8.8Q12.64 11.36 15.2 12Q12.64 12.64 12 15.2Q11.36 12.64 8.8 12Q11.36 11.36 12 8.8Z"/>'],
+['ai-folder','AI','ai folder organize files smart','<pg d="3 6 9.5 6 12 9 21 9 21 19 3 19" r="2"/><path f d="M12 11.2Q12.56 13.44 14.8 14Q12.56 14.56 12 16.8Q11.44 14.56 9.2 14Q11.44 13.44 12 11.2Z"/>'],
+['ai-user','AI','ai user avatar profile persona','<circle cx="9.5" cy="8" r="3.5"/><path d="M3 20c0-3.3 3-5.5 6.5-5.5s6.5 2.2 6.5 5.5z"/><path b d="M19 3Q19.6 5.4 22 6Q19.6 6.6 19 9Q18.4 6.6 16 6Q18.4 5.4 19 3Z"/>'],
+['ai-cloud','AI','ai cloud compute hosted model','<path d="M7 19a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 18 9.5a4.5 4.5 0 0 1 .5 9.5z"/><path f d="M12 11.2Q12.56 13.44 14.8 14Q12.56 14.56 12 16.8Q11.44 14.56 9.2 14Q11.44 13.44 12 11.2Z"/>'],
+['ai-phone','AI','ai phone mobile smart device','<rect x="6" y="2" width="12" height="20" rx="3"/><path k d="M10.5 5.5h3"/><path f d="M12 8.6Q12.68 11.32 15.4 12Q12.68 12.68 12 15.4Q11.32 12.68 8.6 12Q11.32 11.32 12 8.6Z"/>'],
+['ai-monitor','AI','ai monitor screen desktop display','<rect x="2" y="4" width="20" height="13" rx="3"/><path o d="M12 17v4M8 21h8"/><path f d="M12 7.3Q12.64 9.86 15.2 10.5Q12.64 11.14 12 13.7Q11.36 11.14 8.8 10.5Q11.36 9.86 12 7.3Z"/>'],
+['ai-prompt','AI','ai prompt input ask instruction','<rect x="2" y="6" width="20" height="12" rx="3"/><path k d="M12.5 12H18"/><path f d="M7.5 9.4Q8.02 11.48 10.1 12Q8.02 12.52 7.5 14.6Q6.98 12.52 4.9 12Q6.98 11.48 7.5 9.4Z"/>'],
+['ai-summary','AI','ai summary summarize shorten tldr','<path o d="M4 6h13M4 12h8M4 18h6"/><path b d="M18 12.5Q18.7 15.3 21.5 16Q18.7 16.7 18 19.5Q17.3 16.7 14.5 16Q17.3 15.3 18 12.5Z"/>'],
+['ai-regenerate','AI','ai regenerate retry refresh rewrite','<path o d="M4.3 10a8 8 0 0 1 14.2-3M15 7h3.5V3.5"/><path o d="M19.7 14a8 8 0 0 1-14.2 3M9 17H5.5v3.5"/><path b d="M12 9Q12.6 11.4 15 12Q12.6 12.6 12 15Q11.4 12.6 9 12Q11.4 11.4 12 9Z"/>'],
+['ai-analytics','AI','ai analytics insights chart predict','<path o d="M5 20v-6M11 20V9M17 20v-8"/><path b d="M18 2Q18.6 4.4 21 5Q18.6 5.6 18 8Q17.4 5.6 15 5Q17.4 4.4 18 2Z"/>'],
+['wheat','Agriculture','wheat grain cereal harvest crop','<path o d="M12 6v15"/><path d="M12 6c-1.2-1.2-1.2-2.8 0-4 1.2 1.2 1.2 2.8 0 4z"/><path d="M12 11 c-2.5-.2-4-1.7-4-4 2.5.2 4 1.7 4 4z"/><path d="M12 11 c2.5-.2 4-1.7 4-4-2.5.2-4 1.7-4 4z"/><path d="M12 16 c-2.5-.2-4-1.7-4-4 2.5.2 4 1.7 4 4z"/><path d="M12 16 c2.5-.2 4-1.7 4-4-2.5.2-4 1.7-4 4z"/><path d="M12 21 c-2.5-.2-4-1.7-4-4 2.5.2 4 1.7 4 4z"/><path d="M12 21 c2.5-.2 4-1.7 4-4-2.5.2-4 1.7-4 4z"/>'],
+['corn','Agriculture','corn maize cob crop','<path d="M12 3c3 0 4.5 4 4.5 8s-1.5 8-4.5 8-4.5-4-4.5-8S9 3 12 3z"/><path k d="M12 3v16M8 8h8M7.5 12.5h9M8.5 17h7"/><path o d="M12 19c-3 0-5.5-1.5-6.5-4.5M12 19c3 0 5.5-1.5 6.5-4.5M12 19v3"/>'],
+['tractor','Agriculture','tractor farm vehicle machinery','<rect x="3" y="11" width="7" height="5" rx="1"/><rect x="11" y="5" width="8" height="7" rx="2"/><path o d="M5.5 7.5V11"/><circle cx="17" cy="16.5" r="4.5"/><circle cx="6" cy="18.5" r="2.5"/><circle k cx="17" cy="16.5" r="1.2"/>'],
+['barn','Agriculture','barn farm building stable','<pg d="3 9.5 12 3 21 9.5 21 21 3 21" r="1.5"/><path k d="M9 21v-6h6v6M9 15l6 6M15 15l-6 6"/>'],
+['silo','Agriculture','silo grain storage tower','<path d="M7 21V9a5 5 0 0 1 10 0v12z"/><path k d="M7 14h10M7 18h10"/>'],
+['greenhouse','Agriculture','greenhouse glasshouse plants growing','<pg d="3 21 3 10 12 4 21 10 21 21" r="1.5"/><path k d="M3 14h18M9 7.5V21M15 7.5V21"/>'],
+['sprout','Agriculture','sprout seedling growth plant new','<path o d="M12 21V12"/><path d="M12 16c-4.5 0-7-2.5-7-7 4.5 0 7 2.5 7 7z"/><path d="M12 12c0-3.5 2.2-6 6-6.5 0 3.5-2.2 6-6 6.5z"/>'],
+['watering-can','Agriculture','watering can irrigate garden','<rect x="3" y="9" width="12" height="11" rx="2"/><path o d="M7 9V6h6v3M15 14l6-6M19.5 6l3 3M21 13v.01M19 17v.01"/>'],
+['grain-sack','Agriculture','grain sack bag flour harvest','<pg d="6 7 18 7 19 21 5 21" r="2"/><path o d="M8.5 7c.8-2.5 6.2-2.5 7 0"/><path k d="M7.5 12h9"/><circle k cx="12" cy="16.5" r="1.5"/>'],
+['harvest-basket','Agriculture','basket harvest produce picking','<pg d="3 11 21 11 18.5 21 5.5 21" r="1.5"/><path o d="M7 11a5 5 0 0 1 10 0"/><path k d="M9 11v10M15 11v10M5 16h14"/>'],
+['drip-irrigation','Agriculture','drip irrigation water pipe watering','<path o d="M3 5h18M6 5v6M12 5v6M18 5v6"/><path d="M6 11c1.4 1.8 2.3 3 2.3 4.2a2.3 2.3 0 0 1-4.6 0C3.7 14 4.6 12.8 6 11z"/><path d="M12 11c1.4 1.8 2.3 3 2.3 4.2a2.3 2.3 0 0 1-4.6 0C9.7 14 10.6 12.8 12 11z"/><path d="M18 11c1.4 1.8 2.3 3 2.3 4.2a2.3 2.3 0 0 1-4.6 0C15.7 14 16.6 12.8 18 11z"/>'],
+['fence','Agriculture','fence farm boundary pickets','<pg d="3 21 3 7 5 4.5 7 7 7 21" r=".8"/><pg d="10 21 10 7 12 4.5 14 7 14 21" r=".8"/><pg d="17 21 17 7 19 4.5 21 7 21 21" r=".8"/><path k d="M3 11h18M3 17h18"/>'],
+['hay-bale','Agriculture','hay bale straw feed','<rect x="3" y="7" width="18" height="12" rx="3"/><path k d="M8 7v12M16 7v12"/>'],
+['pitchfork','Agriculture','pitchfork fork farm tool','<path o d="M6 3v5a6 6 0 0 0 12 0V3M12 3v18"/>'],
+['add','Add + Remove','add plus new create','<path o d="M12 5v14M5 12h14"/>'],
+['add-circle','Add + Remove','add plus circle new','<circle cx="12" cy="12" r="9"/><path k d="M12 8v8M8 12h8"/>'],
+['add-square','Add + Remove','add plus square new','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M12 8v8M8 12h8"/>'],
+['minus','Add + Remove','minus subtract less','<path o d="M5 12h14"/>'],
+['minus-circle','Add + Remove','minus circle subtract','<circle cx="12" cy="12" r="9"/><path k d="M8 12h8"/>'],
+['minus-square','Add + Remove','minus square subtract','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M8 12h8"/>'],
+['close','Add + Remove','close cancel dismiss cross x','<path o d="M6 6l12 12M18 6L6 18"/>'],
+['close-circle','Add + Remove','close circle cancel dismiss','<circle cx="12" cy="12" r="9"/><path k d="M9 9l6 6M15 9l-6 6"/>'],
+['close-square','Add + Remove','close square cancel dismiss','<rect x="3" y="3" width="18" height="18" rx="3"/><path k d="M9 9l6 6M15 9l-6 6"/>'],
+['trash','Add + Remove','trash delete bin remove garbage','<pg d="6 7 18 7 16.8 20 7.2 20" r="1.5"/><path o d="M4 7h16M9.5 7V4h5v3"/><path k d="M10 11v6M14 11v6"/>'],
+['user','Users','user person profile account','<circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c0-3.5 3.3-6 7.5-6s7.5 2.5 7.5 6z"/>'],
+['user-circle','Users','user avatar profile picture account','<circle cx="12" cy="12" r="9"/><circle k cx="12" cy="10" r="3"/><path k d="M6.2 18.3c.9-2.2 3.2-3.3 5.8-3.3s4.9 1.1 5.8 3.3"/>'],
+['user-add','Users','add user invite new member','<circle cx="9" cy="8" r="4"/><path d="M2 20.5c0-3.5 3-6 7-6s7 2.5 7 6z"/><path o d="M19.5 14v5M17 16.5h5"/>'],
+['user-remove','Users','remove user delete member','<circle cx="9" cy="8" r="4"/><path d="M2 20.5c0-3.5 3-6 7-6s7 2.5 7 6z"/><path o d="M17.5 14.5l4 4M21.5 14.5l-4 4"/>'],
+['user-check','Users','verified user approved member','<circle cx="9" cy="8" r="4"/><path d="M2 20.5c0-3.5 3-6 7-6s7 2.5 7 6z"/><path o d="M17 16.5l2 2 3.5-4"/>'],
+['user-block','Users','block user ban suspend','<circle cx="9" cy="8" r="4"/><path d="M2 20.5c0-3.5 3-6 7-6s7 2.5 7 6z"/><circle cx="19" cy="16.5" r="3"/><path k d="M16.9 18.6l4.2-4.2"/>'],
+['users','Users','team people group members','<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-5.5 6.5-5.5s6.5 2 6.5 5.5z"/><path o d="M16 4.7a3.5 3.5 0 0 1 0 6.6M18.5 14.8c2 .7 3 2.2 3 5.2"/>'],
+['id-badge','Users','id badge identity employee pass','<rect x="5" y="3" width="14" height="18" rx="3"/><path k d="M10 6.5h4"/><circle k cx="12" cy="11.5" r="2"/><path k d="M8.5 18c.5-2 1.8-3 3.5-3s3 1 3.5 3"/>'],
+['lock','Security','lock private secure password','<rect x="4" y="10" width="16" height="11" rx="3"/><path o d="M8 10V7a4 4 0 0 1 8 0v3"/><path k d="M12 14.5v2.5"/>'],
+['lock-open','Security','unlock open access unlocked','<rect x="4" y="10" width="16" height="11" rx="3"/><path o d="M8 10V7a4 4 0 0 1 7.4-2.1"/><path k d="M12 14.5v2.5"/>'],
+['key','Security','key api token credential','<circle cx="8" cy="15.5" r="4"/><path o d="M11 12.5L20.5 3M16.5 7l3 3"/><circle k cx="8" cy="15.5" r="1.2"/>'],
+['password','Security','password field hidden dots input','<rect x="2" y="6" width="20" height="12" rx="3"/><path k d="M7 12h.01M12 12h.01M17 12h.01"/>'],
+['face-id','Security','face id biometric scan recognition','<path o d="M3 8V3h5M16 3h5v5M21 16v5h-5M8 21H3v-5M9 10v1M15 10v1M12 10v3h-1M9 16c1.5 1.2 4.5 1.2 6 0"/>'],
+['two-factor','Security','two factor 2fa phone verification code','<rect x="7" y="2" width="10" height="20" rx="3"/><path k d="M10.5 5.5h3M9.8 12.2l1.7 1.7 2.8-3.2"/>'],
+['login','Login + Logout','login sign in enter','<path o d="M3 12h10M9.5 8.5L13 12l-3.5 3.5M14 4h6v16h-6"/>'],
+['logout','Login + Logout','logout sign out exit','<path o d="M10 4H4v16h6M10 12h10M16.5 8.5L20 12l-3.5 3.5"/>'],
+['shield','Security','shield protection security safe','<pg d="12 3 20 6 20 12 16.5 18 12 21 7.5 18 4 12 4 6" r="2.5"/>'],
+['shield-check','Security','shield check verified protected permission','<pg d="12 3 20 6 20 12 16.5 18 12 21 7.5 18 4 12 4 6" r="2.5"/><path k d="M8.5 12l2.5 2.5 4.5-5"/>'],
+['shield-alert','Security','shield alert warning risk security issue','<pg d="12 3 20 6 20 12 16.5 18 12 21 7.5 18 4 12 4 6" r="2.5"/><path k d="M12 8.5v4M12 15.5v.01"/>'],
+['shield-x','Security','shield denied blocked access denied','<pg d="12 3 20 6 20 12 16.5 18 12 21 7.5 18 4 12 4 6" r="2.5"/><path k d="M9.5 9.5l5 5M14.5 9.5l-5 5"/>'],
+['crown','Award','crown owner admin superuser','<pg d="3 8 7.5 12 12 5 16.5 12 21 8 19 19 5 19" r="1.2"/><path k d="M6 16h12"/>'],
+['eye','Security','eye view visible show preview','<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle k cx="12" cy="12" r="3"/>'],
+['eye-off','Security','eye off hide hidden invisible','<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle k cx="12" cy="12" r="3"/><path k d="M4 4l16 16"/>'],
+['block','Alert','block ban forbidden not allowed','<circle cx="12" cy="12" r="9"/><path k d="M5.6 5.6l12.8 12.8"/>'],
+['credit-card','Billing & Payments','card payment checkout debit','<rect x="2" y="5" width="20" height="14" rx="3"/><path k d="M2 10h20M6 15h4"/>'],
+['credit-card-add','Billing & Payments','add new card payment method','<rr d="2 5 20 14 3 18 17 6.25"/><path k d="M2 10h20M6 15h4"/><circle cx="18" cy="17" r="4"/><path k d="M18 15v4M16 17h4"/>'],
+['credit-card-secure','Billing & Payments','secure protected card safe','<rr d="2 5 20 14 3 18 17 6.25"/><path k d="M2 10h20M6 15h4"/><path d="M18 13l3.2 1.2v2.4c0 2-1.4 3.1-3.2 3.7-1.8-.6-3.2-1.7-3.2-3.7v-2.4z"/><path k d="M16.5 16.8l1.1 1.1 1.9-2.1"/>'],
+['bank','Billing & Payments','bank institution transfer finance','<pg d="3 9 12 4 21 9" r="1.5"/><path o d="M6 12.5v5M10 12.5v5M14 12.5v5M18 12.5v5M3 20.5h18"/>'],
+['wallet','Billing & Payments','wallet money balance funds','<rect x="3" y="6" width="18" height="14" rx="3"/><path o d="M6 6l9-3v3"/><path k d="M16 13h2"/>'],
+['coins','Billing & Payments','coins money savings cash','<circle cx="9.5" cy="14.5" r="6"/><path o d="M10 8.5A5.5 5.5 0 1 1 15.5 14"/><circle k cx="9.5" cy="14.5" r="2.5"/>'],
+['banknote','Billing & Payments','cash bill money paper','<rect x="2" y="6" width="20" height="12" rx="3"/><circle k cx="12" cy="12" r="2.5"/><path k d="M6 12h.01M18 12h.01"/>'],
+['qr-pay','Billing & Payments','qr code scan pay','<rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><path o d="M14 14h2M20 14h1M14 17h1M18 17h3M14 21h3M20 21h1"/>'],
+['receipt','Billing & Payments','receipt bill proof purchase','<pg d="6 3 18 3 18 21 15 19 12 21 9 19 6 21" r="2"/><path k d="M9 8h6M9 12h6"/>'],
+['invoice','Billing & Payments','invoice bill document billing','<pg d="6 3 14 3 19 8 19 21 6 21" r="2"/><path k d="M14 3v5h5M9.5 13h6M9.5 17h4"/>'],
+['invoice-paid','Billing & Payments','invoice paid settled done','<pg d="6 3 14 3 19 8 19 21 6 21" r="2"/><path k d="M14 3v5h5M9.5 15l2.2 2.2 4-4.4"/>'],
+['invoice-overdue','Billing & Payments','invoice overdue late unpaid warning','<pg d="6 3 14 3 19 8 19 21 6 21" r="2"/><path k d="M14 3v5h5M12.5 12v4M12.5 18.2v.01"/>'],
+['invoice-send','Billing & Payments','send invoice share email','<pg d="6 3 14 3 19 8 19 21 6 21" r="2"/><path k d="M14 3v5h5M10 17l5-5M11 12h4v4"/>'],
+['calculator','Billing & Payments','calculator math total amount','<rect x="5" y="3" width="14" height="18" rx="3"/><path k d="M9 8h6M9 13h.01M12 13h.01M15 13h.01M9 17h.01M12 17h.01M15 17h.01"/>'],
+['subscription','Billing & Payments','subscription recurring plan billing cycle','<path o d="M4.3 10a8 8 0 0 1 14.2-3M15 7h3.5V3.5"/><path o d="M19.7 14a8 8 0 0 1-14.2 3M9 17H5.5v3.5"/><circle cx="12" cy="12" r="2.5"/>'],
+['auto-renew','Billing & Payments','renew repeat recurring refresh','<path o d="M4.3 10a8 8 0 0 1 14.2-3M15 7h3.5V3.5"/><path o d="M19.7 14a8 8 0 0 1-14.2 3M9 17H5.5v3.5"/>'],
+['upgrade-plan','Billing & Payments','upgrade plan increase tier arrow up circle','<circle cx="12" cy="12" r="9"/><path k d="M12 16.5v-9M8 11.5l4-4 4 4"/>'],
+['downgrade-plan','Billing & Payments','downgrade plan reduce tier arrow down circle','<circle cx="12" cy="12" r="9"/><path k d="M12 7.5v9M8 12.5l4 4 4-4"/>'],
+['free-trial','Billing & Payments','free trial time limited hourglass','<pg d="7 3 17 3 17 7 12 12 7 7" r="1.2"/><pg d="7 21 17 21 17 17 12 12 7 17" r="1.2"/>'],
+['price-tag','Billing & Payments','price tag label cost','<pg d="3 3 11.6 3 21 12.4 12.4 21 3 11.6" r="2"/><circle k cx="8" cy="8" r="1.2"/>'],
+['discount','Billing & Payments','discount percent offer sale','<circle cx="12" cy="12" r="9"/><path k d="M9 15l6-6"/><circle k cx="9.3" cy="9.3" r="1.2"/><circle k cx="14.7" cy="14.7" r="1.2"/>'],
+['coupon','Billing & Payments','coupon voucher ticket promo','<rect x="2" y="6" width="20" height="12" rx="3"/><path k d="M15 6.5v2M15 11v2M15 15.5v2M6 10h5M6 14h3"/>'],
+['transfer','Billing & Payments','transfer send receive swap swap horizontal arrows exchange left right','<path o d="M4 8h15M15.5 4.5L19 8l-3.5 3.5M20 16H5M8.5 12.5L5 16l3.5 3.5"/>'],
+['payout','Billing & Payments','payout withdraw cash out','<path o d="M12 15V3M8 7l4-4 4 4M4 13v7h16v-7"/>'],
+['refund','Billing & Payments','refund return money back','<path o d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3L4.5 8.8M4.5 4.5v4.3h4.3"/><circle cx="12" cy="12" r="2.5"/>'],
+['payment-success','Billing & Payments','payment success paid approved','<rr d="2 5 20 14 3 18 17 6.25"/><path k d="M2 10h20M6 15h4"/><circle cx="18" cy="17" r="4"/><path k d="M16 17.2l1.5 1.5 2.8-3"/>'],
+['payment-failed','Billing & Payments','payment failed declined error','<rr d="2 5 20 14 3 18 17 6.25"/><path k d="M2 10h20M6 15h4"/><circle cx="18" cy="17" r="4"/><path k d="M16.5 15.5l3 3M19.5 15.5l-3 3"/>'],
+['payment-pending','Billing & Payments','payment pending waiting processing','<rr d="2 5 20 14 3 18 17 6.25"/><path k d="M2 10h20M6 15h4"/><circle cx="18" cy="17" r="4"/><path k d="M18 15v2.3l1.4.8"/>'],
+['dispute','Billing & Payments','dispute chargeback flag report','<pg d="5 4 18 4 15 8.5 18 13 5 13" r="1.2"/><path o d="M5 4v17"/>'],
+['currency-exchange','Billing & Payments','currency exchange convert forex','<circle cx="7" cy="7" r="4"/><circle cx="17" cy="17" r="4"/><path o d="M13.5 7H20M17.5 4.5L20 7l-2.5 2.5M10.5 17H4M6.5 14.5L4 17l2.5 2.5"/>'],
+['dollar-circle','Billing & Payments','dollar money price amount','<circle cx="12" cy="12" r="9"/><path k d="M14.2 9.4c-.3-.9-1.2-1.4-2.2-1.4-1.3 0-2.3.7-2.3 1.7 0 2.4 4.6 1.2 4.6 3.6 0 1-1 1.7-2.3 1.7-1.1 0-2-.5-2.3-1.4M12 6.5V8M12 16v1.5"/>'],
+['vault','Billing & Payments','vault safe secure savings','<rect x="3" y="4" width="18" height="15" rx="3"/><circle k cx="12" cy="11.5" r="3"/><path k d="M12 11.5h.01"/><path o d="M7 19v2M17 19v2"/>'],
+['tax','Billing & Payments','tax vat duty percent document','<pg d="6 3 14 3 19 8 19 21 6 21" r="2"/><path k d="M14 3v5h5M15 11.5l-5 6"/><circle k cx="10.5" cy="12" r="1"/><circle k cx="14.5" cy="17" r="1"/>'],
+['usage-meter','Billing & Payments','usage meter gauge limit quota','<path o d="M5.64 18.36A9 9 0 1 1 18.36 18.36M12 12l3.5-3.5"/><circle cx="12" cy="12" r="1.2"/>'],
+['dashboard','Dashboard','overview layout widgets','<rect x="3" y="3" width="8" height="10" rx="2"/><rect x="13" y="3" width="8" height="6" rx="2"/><rect x="13" y="11" width="8" height="10" rx="2"/><rect x="3" y="15" width="8" height="6" rx="2"/>'],
+['mail','Communications','email inbox message','<rect x="3" y="5" width="18" height="14" rx="3"/><path k d="M3.5 7.5L12 13l8.5-5.5"/>'],
+['chat','Communications','comment conversation support','<path d="M4 5h16v11H10l-5 4v-4H4z"/>'],
+['settings','Settings','preferences sliders controls','<path o d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/>'],
+['plug','Integrations','connect app extension','<path o d="M9 3v4M15 3v4M12 17v4"/><path d="M6 7h12v4a6 6 0 0 1-12 0z"/>'],
+['link','Link + Unlink','url connect share','<path o d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>'],
+['rocket','Onboarding','launch start','<path d="M12 3c4 2 6 6 5 11l-3 3h-4l-3-3c-1-5 1-9 5-11z"/><circle k cx="12" cy="10" r="1.5"/><path o d="M9 17l-3 3M15 17l3 3"/>'],
+['check-circle','Check','success done complete','<circle cx="12" cy="12" r="9"/><path k d="M8 12.5l3 3 5-6"/>'],
+['upload','Download + Upload','import file','<path d="M6 3h8l5 5v13H6z"/><path k d="M12 17v-6M9.5 13.5L12 11l2.5 2.5"/>'],
+['folder','File Folders','directory documents','<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>'],
+['file-text','File Folders','document page','<path d="M6 3h8l5 5v13H6z"/><path k d="M9 13h6M9 17h6M9 9h2"/>'],
+['download','Download + Upload','save export','<path o d="M12 4v11M7.5 10.5L12 15l4.5-4.5M5 20h14"/>'],
+['home','Home','house start','<path d="M4 11l8-7 8 7v9H4z"/><path k d="M10 20v-5h4v5"/>'],
+['menu','Menu','hamburger list','<path o d="M4 6h16M4 12h16M4 18h10"/>'],
+['calendar','Date + Time','date schedule','<rect x="3" y="5" width="18" height="16" rx="3"/><path k d="M3 10h18"/><path o d="M8 3v4M16 3v4"/>'],
+['clock','Date + Time','hour duration','<circle cx="12" cy="12" r="9"/><path k d="M12 7v5l3 2"/>'],
+['search','Search','find lookup','<circle cx="11" cy="11" r="7"/><path o d="M16.5 16.5L21 21"/>'],
+['filter','Filter + Sorting','sort refine','<path d="M3 5h18l-7 8v6l-4-2v-4z"/>'],
+['code','Programming','programming api','<path o d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/>'],
+['terminal','Programming','command line shell','<rect x="3" y="4" width="18" height="16" rx="3"/><path k d="M7 9l3 3-3 3M13 15h4"/>'],
+['clipboard','Notes + Tasks','checklist todo','<path d="M9 3h6v4H9z"/><rect x="5" y="5" width="14" height="16" rx="3"/><path k d="M9 14l2 2 4-4"/>']
+];
+const MASTER=['Add + Remove', 'Agriculture', 'AI', 'Alert', 'Analytics', 'Animal', 'Animation', 'Arrows', 'Automation', 'Award', 'Billing & Payments', 'Bookmark', 'Buildings', 'Business', 'Check', 'Clothing', 'Cloud & Data', 'Collaboration', 'Communications', 'Crypto', 'Customer Support', 'Dashboard', 'Date + Time', 'Devices', 'Download + Upload', 'E-commerce', 'Editing', 'Education', 'Emojis', 'Energy', 'Feedback & Surveys', 'File Folders', 'Filter + Sorting', 'Foods', 'Furnitures', 'Games', 'Git', 'Gym', 'Hands', 'Hierarchy', 'Home', 'Image + Camera', 'Integrations', 'Islamic', 'Kitchen', 'Layout', 'Legal', 'Link + Unlink', 'Login + Logout', 'Logistics', 'Logos', 'Maps', 'Marketing', 'Mathematics', 'Media', 'Medical', 'Menu', 'Mouse', 'Nature', 'Notes + Tasks', 'Onboarding', 'People & HR', 'Presentation', 'Programming', 'Project Management', 'Sales & CRM', 'Science + Technology', 'Search', 'Security', 'Settings', 'Shapes', 'Social Media', 'Space', 'Sports', 'Tools + Construction', 'Travel + Transport', 'Users', 'Weather', 'Wifi'];
+I.sort((a,b)=>MASTER.indexOf(a[1])-MASTER.indexOf(b[1]));
+const cats=[...new Set(I.map(i=>i[1]))].sort();
+const $=s=>document.querySelector(s);
+let q='',cat='All',st='stroke',cr='round';
+function FA(s,cp){return{stroke:'',duo:' fill="currentColor" fill-opacity=".2"',two:' fill="'+(cp?'#0b7285':'var(--ac)')+'" fill-opacity=".4"',solid:' fill="currentColor"',bulk:' fill="currentColor" fill-opacity=".4"'}[s]}
+function inner(m,s,c,cp){
+m=m.replace(/rx="(\d+)"/g,(x,n)=>'rx="'+(c==='sharp'?0:c==='std'?n/2:n)+'"');
+const kr=c==='sharp'?0:c==='std'?.5:1,f=n=>+n.toFixed(2);
+m=m.replace(/<rt d="([^"]+)"\/>/g,(x,a)=>{const[X,Y,W,H,r0,cx,cy,R]=a.split(' ').map(Number),r=r0*kr,x2=X+W,y2=Y+H,xa=cx-Math.sqrt(R*R-(Y-cy)**2),yb=cy+Math.sqrt(R*R-(x2-cx)**2),A=(u,v)=>r?'A'+r+' '+r+' 0 0 1 '+u+' '+v:'L'+u+' '+v;return '<path d="M'+(X+r)+' '+Y+'H'+f(xa)+'A'+R+' '+R+' 0 0 0 '+x2+' '+f(yb)+'V'+(y2-r)+A(x2-r,y2)+'H'+(X+r)+A(X,y2-r)+'V'+(Y+r)+A(X+r,Y)+'Z"/>'});
+m=m.replace(/<pg d="([^"]+)" r="([\d.]+)"\/>/g,(x,a,r0)=>{const n=a.split(' ').map(Number),P=[];for(let i=0;i<n.length;i+=2)P.push([n[i],n[i+1]]);const r=r0*kr,L=P.length,pt=(A,B,d)=>{const l=Math.hypot(B[0]-A[0],B[1]-A[1]),t=Math.min(d,l/2)/l;return[A[0]+(B[0]-A[0])*t,A[1]+(B[1]-A[1])*t]};let d='';P.forEach((V,i)=>{const u=pt(V,P[(i+L-1)%L],r),w=pt(V,P[(i+1)%L],r);d+=(i?'L':'M')+f(u[0])+' '+f(u[1])+(r?'Q'+V[0]+' '+V[1]+' '+f(w[0])+' '+f(w[1]):'L'+V[0]+' '+V[1])});return '<path d="'+d+'Z"/>'});
+m=m.replace(/<rr d="([^"]+)"\/>/g,(x,a)=>{const[X,Y,W,H,r0,cx,cy,R]=a.split(' ').map(Number),r=r0*kr,x2=X+W,y2=Y+H,ya=cy-Math.sqrt(R*R-(x2-cx)**2),xa=cx-Math.sqrt(R*R-(y2-cy)**2),A=(u,v)=>r?'A'+r+' '+r+' 0 0 1 '+u+' '+v:'L'+u+' '+v;return '<path d="M'+(X+r)+' '+Y+'H'+(x2-r)+A(x2,Y+r)+'V'+f(ya)+'A'+R+' '+R+' 0 0 0 '+f(xa)+' '+y2+'H'+(X+r)+A(X,y2-r)+'V'+(Y+r)+A(X+r,Y)+'Z"/>'});
+return m.replace(/<(path|rect|circle)\b([^>]*?)\/?>/g,(x,t,a)=>{if(/^\s+o\b/.test(a))return '<'+t+a.replace(/^\s+o\b/,'')+'/>';if(/^\s+k\b/.test(a))return '<'+t+a.replace(/^\s+k\b/,'')+(s==='solid'?' style="stroke:var(--ko'+(cp?',#fff':'')+')"':'')+'/>';if(/^\s+f\b/.test(a))return '<'+t+a.replace(/^\s+f\b/,'')+(s==='solid'?' style="fill:var(--ko'+(cp?',#fff':'')+');stroke:var(--ko'+(cp?',#fff':'')+')"':' fill="currentColor"')+'/>';if(/^\s+b\b/.test(a))return '<'+t+a.replace(/^\s+b\b/,'')+' fill="currentColor"/>';return '<'+t+a+FA(s,cp)+'/>'})}
+function svg(m,s,c,z,cp){
+const j=c==='round'?'round':'miter',l=c==='sharp'?'square':'round';
+return '<svg xmlns="http://www.w3.org/2000/svg" width="'+z+'" height="'+z+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="'+l+'" stroke-linejoin="'+j+'">'+inner(m,s,c,cp)+'</svg>'}
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),1600)}
+function cp(t){
+const fb=()=>{const a=document.createElement('textarea');a.value=t;a.style.cssText='position:fixed;opacity:0';document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove();toast(cp.m||'SVG copied')};
+try{navigator.clipboard.writeText(t).then(()=>toast(cp.m||'SVG copied'),fb)}catch(e){fb()}}
+function mark(s,a,v){document.querySelectorAll(s+' button').forEach(b=>b.classList.toggle('on',b.dataset[a]===v))}
+function draw(){
+mark('#sty','st',st);mark('#cor','cr',cr);
+const n=c=>I.filter(i=>i[1]===c).length;
+$('#side').innerHTML='<h3>Categories</h3><button class="cat'+(cat==='All'?' on':'')+'" data-c="All"><span>All icons</span><span>'+I.length+'</span></button>'+MASTER.map(c=>cats.includes(c)?'<button class="cat'+(c===cat?' on':'')+'" data-c="'+c+'"><span>'+c+'</span><span>'+n(c)+'</span></button>':'<button class="cat soon" disabled><span>'+c+'</span><span>Soon</span></button>').join('');
+const k=q.trim().toLowerCase();
+const L=I.filter(i=>(cat==='All'||i[1]===cat)&&(!k||(i[0]+' '+i[1]+' '+i[2]).toLowerCase().includes(k)));
+$('#ttl').textContent=cat==='All'?'All icons':cat;
+$('#meta').textContent=L.length+' icons. Click one for sizes, colors and downloads';
+$('#grid').innerHTML=L.map(i=>'<button class="ic" data-n="'+i[0]+'" aria-label="Open '+i[0]+' details">'+svg(i[3],st,cr,28)+'<span>'+i[0]+'</span></button>').join('');
+$('#empty').hidden=L.length>0;feat();if(HR)home()}
+const F=I.find(i=>i[0]==='folder')[3];
+$('#styledemo').innerHTML=[['stroke','Stroke','Navigation, tables and forms, next to text.'],['duo','Duotone','Empty states and feature sections.'],['two','Twotone','Brand moments, with the accent color.'],['solid','Solid','Active tabs and selected states.'],['bulk','Bulk','Illustrated headers and onboarding.']].map(x=>'<div class="box"><div class="big">'+svg(F,x[0],'round',56)+'</div><h3>'+x[1]+'</h3><p>'+x[2]+'</p></div>').join('');
+$('#cornerdemo').innerHTML=[['round','Rounded','Friendly products, consumer and mobile.'],['std','Standard','Balanced. Works for most dashboards.'],['sharp','Sharp','Dense, technical and finance tools.']].map(x=>'<div class="box"><div class="big">'+svg(F,'stroke',x[0],56)+'</div><h3>'+x[1]+'</h3><p>'+x[2]+'</p></div>').join('');
+function eff(){return document.documentElement.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}
+function ti(){$('#th').innerHTML=eff()==='dark'?svg('<circle cx="12" cy="12" r="4"/><path o d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/>','stroke','round',20):svg('<path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/>','stroke','round',20)}
+try{const t=localStorage.getItem('t');if(t)document.documentElement.dataset.theme=t}catch(e){}
+$('#th').addEventListener('click',()=>{const t=eff()==='dark'?'light':'dark';document.documentElement.dataset.theme=t;try{localStorage.setItem('t',t)}catch(e){}ti();draw()});
+document.addEventListener('click',e=>{
+const t=e.target.closest('button');if(!t)return;
+if(t.dataset.c){cat=t.dataset.c;draw()}
+else if(t.dataset.st){st=t.dataset.st;draw()}
+else if(t.dataset.cr){cr=t.dataset.cr;draw()}
+else if(t.dataset.n){openM(t.dataset.n);return}
+else if(t.id==='clr'){q='';cat='All';$('#q').value='';draw()}
+else if(t.id==='go'){const v=$('#em').value.trim();$('#ok').textContent=/^\S+@\S+\.\S+$/.test(v)?'Thanks, you are on the list. (Prototype: emails are not stored yet.)':'Please enter a valid email address.'}});
+$('#q').addEventListener('input',e=>{q=e.target.value;draw()});
+ti();draw();$('#fcount').textContent=I.length+' icons in '+cats.length+' categories';
+
+function feat(){$('#feat').innerHTML=['credit-card','user','shield-check','chart-bar','bell','mail','settings','plug','rocket','folder','calendar','search'].map(n=>{const i=I.find(x=>x[0]===n);return '<button class="ic" data-n="'+n+'" aria-label="Open '+n+' details">'+svg(i[3],st,cr,28)+'<span>'+n+'</span></button>'}).join('')}
+const CC=I[0][3],SN=[['stroke','Stroke'],['duo','Duotone'],['two','Twotone'],['solid','Solid'],['bulk','Bulk']],CN=[['round','Rounded'],['std','Standard'],['sharp','Sharp']];
+const UU={stroke:'Tables, forms, navigation',duo:'Empty states, features',two:'Brand moments',solid:'Active and selected states',bulk:'Onboarding, headers'};
+$('#matrix').innerHTML='<div class="mh f">Style</div>'+CN.map(c=>'<div class="mh">'+c[1]+'</div>').join('')+SN.map(s=>'<div class="ml"><b>'+s[1]+'</b><small>'+UU[s[0]]+'</small></div>'+CN.map(c=>'<div class="mc">'+svg(CC,s[0],c[0],36)+'</div>').join('')).join('');
+const V=['home','icons','styles','integrations','license'],TT={home:'24iconlab \u2013 Icons made for SaaS products',icons:'Icons \u2013 24iconlab',styles:'Styles \u2013 24iconlab',integrations:'Integrations \u2013 24iconlab',license:'License \u2013 24iconlab'};let cur='';
+function route(){const h=location.hash.slice(1);
+if(h==='top'){scrollTo(0,0);return}
+if(h==='access'){$('#access').scrollIntoView();return}
+const v=V.includes(h)?h:'home';if(v===cur)return;cur=v;
+document.querySelectorAll('.view').forEach(e=>{e.hidden=e.dataset.v!==v});
+document.querySelectorAll('.nav a.l').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+v));
+document.title=TT[v];scrollTo(0,0)}
+function goSearch(){q=$('#hq').value;$('#q').value=q;cat='All';draw();location.hash='icons'}
+$('#hs').addEventListener('click',goSearch);
+$('#hq').addEventListener('keydown',e=>{if(e.key==='Enter')goSearch()});
+addEventListener('hashchange',route);route();
+
+var HR;
+const U={stroke:'Tables, forms and navigation',duo:'Empty states and feature sections',two:'Brand moments with accent color',solid:'Active tabs and selected states',bulk:'Onboarding and headers'};
+function home(){
+const g=(n,z,a,b)=>svg(I.find(x=>x[0]===n)[3],a||'stroke',b||'round',z||20);
+$('#stats').innerHTML=[[I.length,'icons'],[cats.length,'categories'],['15','style combinations'],['24 px','grid']].map(x=>'<div><b>'+x[0]+'</b><span>'+x[1]+'</span></div>').join('');
+$('#cats').innerHTML=cats.filter(c=>I.filter(i=>i[1]===c).length>=3).map(c=>{const L=I.filter(i=>i[1]===c);return '<button class="case" data-u="'+c+'"><div><b>'+c+'</b><small>'+L.length+' icons</small></div><div class="mini">'+L.slice(0,3).map(i=>svg(i[3],st,cr,24)).join('')+'</div></button>'}).join('');
+const six=['credit-card','user','bell','folder','chart-bar','settings'];
+$('#strip').innerHTML=SN.map(s=>'<a class="box lk" href="#styles"><div class="mi">'+six.map(x=>g(x,24,s[0])).join('')+'</div><h3>'+s[1]+'</h3><p>'+U[s[0]]+'</p></a>').join('');
+$('#sizes').innerHTML=[16,24,32,48].map(z=>g('folder',z)).join('')+'<span style="color:var(--ac);display:flex;gap:20px;align-items:flex-end">'+[24,48].map(z=>g('folder',z,'two')).join('')+'</span>';
+const rows=(a,on)=>a.map((r,i)=>'<div class="ur'+(i===on?' on':'')+'">'+g(r[0],20,i===on?'solid':'stroke')+r[1]+'</div>').join('');
+$('#ex').innerHTML=
+'<div class="shot"><div class="ui">'+rows([['receipt','Edit invoice'],['mail','Send reminder'],['download','Download PDF'],['link','Copy link'],['folder','Archive'],['check-circle','Mark as paid']],-1)+'</div></div>'+
+'<div class="shot"><div class="ui">'+rows([['dashboard','Dashboard'],['credit-card','Billing'],['users','Team'],['chart-bar','Analytics'],['plug','Integrations'],['settings','Settings']],1)+'</div></div>'+
+'<div class="shot"><div class="ui"><div class="ur"><b>Revenue</b></div><div class="num">$12,480</div><div class="ur up">'+g('trend-up',18)+'+8.2% this month</div>'+rows([['bell','Alerts on'],['shield-check','Access reviewed'],['calendar','Report due Friday']],-1)+'</div></div>';
+$('#figmock').innerHTML='<div class="fig"><div class="fh"><i></i><i></i><i></i><span>24iconlab</span></div><div class="fs2">'+g('search',16)+'Search icons</div><div class="fp"><b>Stroke</b><span>Solid</span><span>Duotone</span></div><div class="fgd">'+['home','user','bell','mail','folder','lock','chart-bar','settings','plug','rocket','clock','filter'].map(n=>'<div>'+g(n,20)+'</div>').join('')+'</div></div>'}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-u]');if(t){cat=t.dataset.u;q='';$('#q').value='';draw();location.hash='icons'}});
+HR=1;home();
+
+const M={n:'',z:24,w:1.5,col:'currentColor',tab:'svg'};
+const SW=['#101828','#ffffff','#0b7285','#2f5bff','#7c3aed','#e5484d','#16a34a','#f59e0b'];
+$('#msz').innerHTML=[12,16,20,24,32,48,64,128].map(z=>'<button class="chip" data-z="'+z+'">'+z+'</button>').join('');
+$('#mcl').innerHTML='<button class="chip" data-col="currentColor">currentColor</button>'+SW.map(c=>'<button class="sw" data-col="'+c+'" style="background:'+c+'" aria-label="'+c+'"></button>').join('')+'<input type="color" id="mcol" value="#101828" aria-label="Custom color"><input id="mhex" placeholder="#101828" maxlength="7" aria-label="Hex color">';
+function lj(){return[cr==='round'?'round':'miter',cr==='sharp'?'square':'round']}
+function body(i,c){const b=inner(i[3],st,cr,true);return c==='currentColor'?b:b.replace(/fill="currentColor"/g,'fill="'+c+'"')}
+function svgx(i,z,ex){const c=(M.col==='currentColor'&&ex)?ex:M.col,a=lj();return '<svg xmlns="http://www.w3.org/2000/svg" width="'+z+'" height="'+z+'" viewBox="0 0 24 24" fill="none" stroke="'+c+'" stroke-width="'+M.w+'" stroke-linecap="'+a[1]+'" stroke-linejoin="'+a[0]+'">'+body(i,c)+'</svg>'}
+function pas(n){return n.split('-').map(x=>x[0].toUpperCase()+x.slice(1)).join('')+'Icon'}
+function code(i){
+if(M.tab==='svg')return svgx(i,M.z).replace(/></g,'>\n  <').replace(/\n  <\/svg>$/,'\n</svg>');
+const a=lj(),b=body(i,M.col).replace(/fill-opacity/g,'fillOpacity').replace(/fill-rule/g,'fillRule').replace(/stroke-dasharray/g,'strokeDasharray').replace(/style="stroke:var\(--ko,#fff\)"/g,"style={{ stroke: 'var(--ko, #fff)' }}");
+return 'export function '+pas(i[0])+'({ size = '+M.z+', ...props }) {\n  return (\n    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="'+M.col+'" strokeWidth={'+M.w+'} strokeLinecap="'+a[1]+'" strokeLinejoin="'+a[0]+'" {...props}>\n      '+b.replace(/></g,'>\n      <')+'\n    </svg>\n  );\n}'}
+function mrender(skip){
+const i=I.find(x=>x[0]===M.n);if(!i)return;
+$('#mc').innerHTML=i[1]+' \u203a '+SN.find(x=>x[0]===st)[1]+' \u00b7 '+CN.find(x=>x[0]===cr)[1]+' \u203a <b>'+i[0]+'</b>';
+$('#mn').textContent=pas(i[0]);
+mark('#msty','st',st);mark('#mcor','cr',cr);mark('#msw','w',String(M.w));mark('#mtab','mt',M.tab);
+document.querySelectorAll('#msz .chip').forEach(b=>b.classList.toggle('on',+b.dataset.z===M.z));
+document.querySelectorAll('#mcl [data-col]').forEach(b=>b.classList.toggle('on',b.dataset.col===M.col));
+if(!skip&&M.col[0]==='#'){$('#mhex').value=M.col;if(M.col.length===7)$('#mcol').value=M.col}
+$('#mp').innerHTML=svgx(i,M.z)+'<small>'+M.z+' px</small>';
+$('#mcd').textContent=code(i)}
+function openM(n){M.n=n;$('#ov').hidden=false;document.body.style.overflow='hidden';mrender();$('#mx').focus()}
+function mclose(){$('#ov').hidden=true;document.body.style.overflow=''}
+function lum(h){h=h.replace('#','');if(h.length===3)h=h.split('').map(x=>x+x).join('');return(.299*parseInt(h.slice(0,2),16)+.587*parseInt(h.slice(2,4),16)+.114*parseInt(h.slice(4,6),16))/255}
+async function save(name,data){
+try{const d=window.claude&&await claude.use('downloads');if(d){await d.save({filename:name,data});toast('Saved '+name);return}}catch(e){if(e&&e.code==='declined')return}
+const a=document.createElement('a');a.href=URL.createObjectURL(data);a.download=name;document.body.appendChild(a);a.click();a.remove()}
+function dl(f){
+const i=I.find(x=>x[0]===M.n),base=M.n+'-'+st+'-'+cr+'-'+M.z+'px';
+if(f==='svg')return save(base+'.svg',new Blob([svgx(i,M.z)],{type:'image/svg+xml'}));
+const tx=(getComputedStyle(document.documentElement).getPropertyValue('--tx')||'#101828').trim(),ic=M.col==='currentColor'?tx:M.col,im=new Image();
+im.onload=()=>{const c=document.createElement('canvas');c.width=c.height=M.z;const x=c.getContext('2d');
+if(f==='jpg'){x.fillStyle=lum(ic)>.6?'#121212':'#ffffff';x.fillRect(0,0,M.z,M.z)}
+x.drawImage(im,0,0,M.z,M.z);c.toBlob(b=>save(base+'.'+f,b),f==='jpg'?'image/jpeg':'image/png',.95)};
+im.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svgx(i,M.z,tx))}
+$('#ov').addEventListener('click',e=>{
+e.stopPropagation();const t=e.target;
+if(t.id==='ov'||t.closest('#mx')){mclose();return}
+const b=t.closest('button');if(!b)return;const i=I.find(x=>x[0]===M.n);
+if(b.dataset.st){st=b.dataset.st;draw()}
+else if(b.dataset.cr){cr=b.dataset.cr;draw()}
+else if(b.dataset.z)M.z=+b.dataset.z;
+else if(b.dataset.w)M.w=+b.dataset.w;
+else if(b.dataset.col)M.col=b.dataset.col;
+else if(b.dataset.mt)M.tab=b.dataset.mt;
+else if(b.dataset.dl){dl(b.dataset.dl);return}
+else if(b.id==='mcp'){cp.m='';cp(svgx(i,M.z));return}
+else if(b.id==='mcc'){cp.m=M.tab==='react'?'React code copied':'SVG code copied';cp($('#mcd').textContent);cp.m='';return}
+else return;
+mrender()});
+$('#ov').addEventListener('input',e=>{const t=e.target;
+if(t.type==='color'){M.col=t.value;mrender()}
+else if(t.id==='mhex'&&/^#([0-9a-f]{3}|[0-9a-f]{6})$/i.test(t.value.trim())){M.col=t.value.trim();mrender(true)}});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#ov').hidden)mclose()});
+</script>
+</body>
+</html>
